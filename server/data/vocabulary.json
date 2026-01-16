@@ -4,7 +4,7 @@
   "modules": [
     {
       "id": "module-1",
-      "title": "Greetings & Introductions",
+      "title": "Essential Greetings",
       "entries": [
         {
           "id": "entry-1",
@@ -13,12 +13,19 @@
             {
               "id": "sense-1-1",
               "pos": "interjection",
-              "definition_en": "Used as a greeting",
-              "examples": ["Hola, ¿cómo estás?", "¡Hola a todos!"],
-              "note": "Standard greeting.",
+              "definition_en": "Used as a common greeting to say hello",
+              "examples": [
+                "Hola, ¿cómo estás?",
+                "¡Hola a todos!"
+              ],
+              "note": "Standard greeting in any social setting.",
               "quiz": {
-                "question": "What is the English translation?",
-                "options": ["Goodbye", "Hello", "Please"],
+                "question": "What is the English translation of 'Hola'?",
+                "options": [
+                  "Goodbye",
+                  "Hello",
+                  "Please"
+                ],
                 "correctAnswerId": "Hello"
               }
             }
@@ -26,18 +33,69 @@
         },
         {
           "id": "entry-2",
-          "headword": "Adiós",
+          "headword": "Buenas",
           "senses": [
             {
               "id": "sense-2-1",
               "pos": "interjection",
-              "definition_en": "Used to express good wishes on parting",
-              "examples": ["Adiós, nos vemos mañana.", "Es difícil decir adiós."],
-              "note": "Standard farewell.",
+              "definition_en": "A shortened, informal version of 'Good morning/afternoon/evening'",
+              "examples": [
+                "Buenas, ¿qué tal?",
+                "Buenas a todos."
+              ],
+              "note": "Very common in informal speech at any time of day.",
               "quiz": {
-                "question": "When do you use this?",
-                "options": ["When arriving", "When leaving", "When eating"],
-                "correctAnswerId": "When leaving"
+                "question": "When can you use 'Buenas'?",
+                "options": [
+                  "Only in the morning",
+                  "Only at night",
+                  "At any time of day"
+                ],
+                "correctAnswerId": "At any time of day"
+              }
+            }
+          ]
+        },
+        {
+          "id": "entry-3",
+          "headword": "Gracias",
+          "senses": [
+            {
+              "id": "sense-3-1",
+              "pos": "interjection",
+              "definition_en": "Used to express gratitude or thanks",
+              "examples": [
+                "Muchas gracias por tu ayuda.",
+                "Gracias de todo corazón."
+              ],
+              "note": "Polite expression of gratitude.",
+              "quiz": {
+                "question": "What does 'Gracias' mean?",
+                "options": [
+                  "Please",
+                  "Thank you",
+                  "You're welcome"
+                ],
+                "correctAnswerId": "Thank you"
+              }
+            },
+            {
+              "id": "sense-3-2",
+              "pos": "interjection",
+              "definition_en": "Used to politely decline an offer (No, gracias)",
+              "examples": [
+                "¿Quieres más café? - No, gracias.",
+                "No, gracias, ya comí."
+              ],
+              "note": "Commonly used with 'No' to decline something politely.",
+              "quiz": {
+                "question": "How do you politely say 'No, thank you'?",
+                "options": [
+                  "Sí, gracias",
+                  "No, gracias",
+                  "De nada"
+                ],
+                "correctAnswerId": "No, gracias"
               }
             }
           ]
