@@ -1,38 +1,24 @@
-import { type User, type InsertUser } from "@shared/schema";
-import { randomUUID } from "crypto";
-
-// modify the interface with any CRUD methods
-// you might need
+import { Unit, unitSchema } from "@shared/schema";
+import fs from "fs";
+import path from "path";
 
 export interface IStorage {
-  getUser(id: string): Promise<User | undefined>;
-  getUserByUsername(username: string): Promise<User | undefined>;
-  createUser(user: InsertUser): Promise<User>;
+  getUnit(): Promise<Unit>;
 }
 
-export class MemStorage implements IStorage {
-  private users: Map<string, User>;
+export class JsonStorage implements IStorage {
+  private unit: Unit;
 
   constructor() {
-    this.users = new Map();
+    // Load JSON on startup
+    const dataPath = path.join(process.cwd(), "server", "data", "vocabulary.json");
+    const rawData = fs.readFileSync(dataPath, "utf-8");
+    this.unit = unitSchema.parse(JSON.parse(rawData));
   }
 
-  async getUser(id: string): Promise<User | undefined> {
-    return this.users.get(id);
-  }
-
-  async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
-  }
-
-  async createUser(insertUser: InsertUser): Promise<User> {
-    const id = randomUUID();
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
+  async getUnit(): Promise<Unit> {
+    return this.unit;
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new JsonStorage();
