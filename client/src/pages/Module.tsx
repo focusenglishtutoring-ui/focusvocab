@@ -1,41 +1,51 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/Button";
 import { Card, CardContent } from "@/components/Card";
 import { ProgressBar } from "@/components/ProgressBar";
 import { useUnit } from "@/hooks/use-content";
 import { useRoute, useLocation } from "wouter";
-import { Check, X, ArrowRight, Volume2, RotateCcw, Home } from "lucide-react";
+import { Check, X, ArrowRight, RotateCcw, Home } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 type Step = "learn" | "quiz" | "complete";
 
 export default function Module() {
-  const [match, params] = useRoute("/unit/:unitId/module/:moduleId");
+  const [, params] = useRoute("/unit/:unitId/module/:moduleId");
   const [, setLocation] = useLocation();
   const { data: unit, isLoading } = useUnit();
 
   // State
   const [currentIndex, setCurrentIndex] = useState(0);
   const [step, setStep] = useState<Step>("learn");
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [selectedAnswerId, setSelectedAnswerId] = useState<string | null>(null);
   const [isAnswerChecked, setIsAnswerChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
 
   // Derived data
-  const module = unit?.modules.find(m => m.id === params?.moduleId);
-  const currentEntry = module?.entries[currentIndex];
-  const isLastEntry = module && currentIndex === module.entries.length - 1;
+  const module = useMemo(() => unit?.modules.find(m => m.id === params?.moduleId), [unit, params?.moduleId]);
+  
+  const flattenedSenses = useMemo(() => {
+    if (!module) return [];
+    return module.entries.flatMap(entry => 
+      entry.senses.map(sense => ({
+        ...sense,
+        headword: entry.headword
+      }))
+    );
+  }, [module]);
+
+  const currentSense = flattenedSenses[currentIndex];
+  const isLastSense = currentIndex === flattenedSenses.length - 1;
 
   // Effects
   useEffect(() => {
-    // Reset scroll when step changes
     window.scrollTo(0, 0);
   }, [currentIndex, step]);
 
   if (isLoading) return <LoadingState />;
-  if (!unit || !module || !currentEntry) return <ErrorState />;
+  if (!unit || !module || !currentSense) return <ErrorState />;
 
   // Handlers
   const handleNextToQuiz = () => {
@@ -43,18 +53,18 @@ export default function Module() {
   };
 
   const handleCheckAnswer = () => {
-    if (!selectedAnswer) return;
-    const correct = selectedAnswer === currentEntry.quiz.correctAnswer;
+    if (!selectedAnswerId) return;
+    const correct = selectedAnswerId === currentSense.quiz.correctAnswerId;
     setIsCorrect(correct);
     setIsAnswerChecked(true);
   };
 
-  const handleNextWord = () => {
-    setSelectedAnswer(null);
+  const handleNextSense = () => {
+    setSelectedAnswerId(null);
     setIsAnswerChecked(false);
     setIsCorrect(false);
     
-    if (isLastEntry) {
+    if (isLastSense) {
       setStep("complete");
     } else {
       setCurrentIndex(prev => prev + 1);
@@ -63,7 +73,7 @@ export default function Module() {
   };
 
   const handleRetry = () => {
-    setSelectedAnswer(null);
+    setSelectedAnswerId(null);
     setIsAnswerChecked(false);
     setIsCorrect(false);
   };
@@ -83,11 +93,10 @@ export default function Module() {
                 Exit
               </Button>
             </div>
-            <ProgressBar current={currentIndex + 1} total={module.entries.length} />
+            <ProgressBar current={currentIndex + 1} total={flattenedSenses.length} />
           </div>
         )}
 
-        {/* Main Content Area */}
         <AnimatePresence mode="wait">
           
           {/* COMPLETE STATE */}
@@ -103,7 +112,7 @@ export default function Module() {
                 <Check className="w-12 h-12" />
               </div>
               <h1 className="text-4xl font-bold text-foreground">Module Complete!</h1>
-              <p className="text-xl text-muted-foreground">You've mastered {module.entries.length} new words.</p>
+              <p className="text-xl text-muted-foreground">You've mastered {flattenedSenses.length} senses.</p>
               
               <div className="flex gap-4 justify-center pt-8">
                 <Button variant="outline" size="lg" onClick={() => setLocation("/unit")}>
@@ -129,25 +138,20 @@ export default function Module() {
             >
               <Card className="overflow-hidden border-2 shadow-lg">
                 <div className="bg-primary/5 p-8 text-center border-b border-border/50">
-                  <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">New Word</p>
+                  <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">{currentSense.pos}</p>
                   <h1 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-4">
-                    {currentEntry.word}
+                    {currentSense.headword}
                   </h1>
-                  {/* Pseudo pronunciation button - purely visual for MVP */}
-                  <Button variant="ghost" size="sm" className="rounded-full text-muted-foreground hover:text-foreground">
-                    <Volume2 className="w-4 h-4 mr-2" />
-                    /pronunciation/
-                  </Button>
                 </div>
                 
                 <CardContent className="p-8 space-y-8">
                   <div className="space-y-3">
                     <h3 className="text-lg font-semibold text-foreground flex items-center gap-2">
                       <span className="w-1.5 h-6 bg-accent rounded-full"/>
-                      Meaning
+                      Definition
                     </h3>
                     <p className="text-xl text-muted-foreground leading-relaxed pl-4">
-                      {currentEntry.meaning}
+                      {currentSense.definition_en}
                     </p>
                   </div>
 
@@ -157,7 +161,7 @@ export default function Module() {
                       Examples
                     </h3>
                     <ul className="space-y-3 pl-4">
-                      {currentEntry.examples.map((ex, i) => (
+                      {currentSense.examples.map((ex, i) => (
                         <li key={i} className="flex gap-3 text-lg text-muted-foreground italic">
                           <span className="text-border font-not-italic select-none">"</span>
                           {ex}
@@ -167,10 +171,10 @@ export default function Module() {
                     </ul>
                   </div>
 
-                  {currentEntry.note && (
+                  {currentSense.note && (
                     <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-xl border border-yellow-200 dark:border-yellow-900/50">
                       <p className="text-sm text-yellow-800 dark:text-yellow-200 font-medium">
-                        💡 Note: {currentEntry.note}
+                        💡 Note: {currentSense.note}
                       </p>
                     </div>
                   )}
@@ -202,18 +206,18 @@ export default function Module() {
                       Comprehension Check
                     </span>
                     <h3 className="text-2xl font-bold leading-tight">
-                      {currentEntry.quiz.question}
+                      {currentSense.quiz.question}
                     </h3>
                   </div>
 
                   <div className="grid gap-3">
-                    {currentEntry.quiz.options.map((option) => {
-                      const isSelected = selectedAnswer === option;
+                    {currentSense.quiz.options.map((option) => {
+                      const isSelected = selectedAnswerId === option;
                       
                       let variantStyles = "hover:border-primary hover:bg-primary/5 border-border bg-card";
                       
                       if (isAnswerChecked) {
-                        if (option === currentEntry.quiz.correctAnswer) {
+                        if (option === currentSense.quiz.correctAnswerId) {
                           variantStyles = "border-green-500 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300";
                         } else if (isSelected && !isCorrect) {
                           variantStyles = "border-red-500 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300";
@@ -228,14 +232,14 @@ export default function Module() {
                         <button
                           key={option}
                           disabled={isAnswerChecked}
-                          onClick={() => setSelectedAnswer(option)}
+                          onClick={() => setSelectedAnswerId(option)}
                           className={cn(
                             "w-full text-left p-4 rounded-xl border-2 transition-all duration-200 flex items-center justify-between group",
                             variantStyles
                           )}
                         >
                           <span className="font-medium text-lg">{option}</span>
-                          {isAnswerChecked && option === currentEntry.quiz.correctAnswer && (
+                          {isAnswerChecked && option === currentSense.quiz.correctAnswerId && (
                             <Check className="w-5 h-5 text-green-600" />
                           )}
                           {isAnswerChecked && isSelected && !isCorrect && (
@@ -273,14 +277,14 @@ export default function Module() {
                           {isCorrect ? "Correct!" : "Incorrect"}
                         </p>
                         <p className="text-sm opacity-90">
-                          {isCorrect ? "Great job mastering this word." : "Give it another try."}
+                          {isCorrect ? "Great job mastering this sense." : "Give it another try."}
                         </p>
                       </div>
                     </div>
                     
                     {isCorrect ? (
-                      <Button onClick={handleNextWord} variant="success" size="lg" className="rounded-full px-6">
-                        {isLastEntry ? "Finish Module" : "Next Word"}
+                      <Button onClick={handleNextSense} variant="default" size="lg" className="rounded-full px-6 bg-green-600 hover:bg-green-700 text-white">
+                        {isLastSense ? "Finish Module" : "Next Card"}
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Button>
                     ) : (
@@ -297,7 +301,7 @@ export default function Module() {
                     <Button 
                       size="lg" 
                       onClick={handleCheckAnswer} 
-                      disabled={!selectedAnswer}
+                      disabled={!selectedAnswerId}
                       className="text-lg px-8 h-14 rounded-full w-full sm:w-auto shadow-lg"
                     >
                       Check Answer
@@ -330,7 +334,7 @@ function ErrorState() {
     <Layout>
       <div className="text-center py-20">
         <h2 className="text-xl font-bold text-destructive">Something went wrong</h2>
-        <Link href="/unit"><Button className="mt-4">Back to Unit</Button></Link>
+        <Button className="mt-4" onClick={() => window.location.href = "/unit"}>Back to Unit</Button>
       </div>
     </Layout>
   );
