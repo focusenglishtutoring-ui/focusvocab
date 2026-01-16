@@ -8,81 +8,39 @@
       "entries": [
         {
           "id": "entry-1",
-          "word": "Hola",
-          "meaning": "Hello",
-          "examples": ["Hola, ¿cómo estás?", "Diles hola a todos."],
-          "note": "Standard greeting.",
-          "quiz": {
-            "question": "What is the English translation?",
-            "options": ["Goodbye", "Hello", "Please"],
-            "correctAnswer": "Hello"
-          }
+          "headword": "Hola",
+          "senses": [
+            {
+              "id": "sense-1-1",
+              "pos": "interjection",
+              "definition_en": "Used as a greeting",
+              "examples": ["Hola, ¿cómo estás?", "¡Hola a todos!"],
+              "note": "Standard greeting.",
+              "quiz": {
+                "question": "What is the English translation?",
+                "options": ["Goodbye", "Hello", "Please"],
+                "correctAnswerId": "Hello"
+              }
+            }
+          ]
         },
         {
           "id": "entry-2",
-          "word": "Adiós",
-          "meaning": "Goodbye",
-          "examples": ["Adiós, nos vemos mañana.", "Es difícil decir adiós."],
-          "note": "Used when leaving.",
-          "quiz": {
-            "question": "When do you use this?",
-            "options": ["When arriving", "When leaving", "When eating"],
-            "correctAnswer": "When leaving"
-          }
-        },
-        {
-          "id": "entry-3",
-          "word": "Gracias",
-          "meaning": "Thank you",
-          "examples": ["Gracias por tu ayuda.", "Muchas gracias."],
-          "note": "Always polite to use.",
-          "quiz": {
-            "question": "What does this mean?",
-            "options": ["Please", "Sorry", "Thank you"],
-            "correctAnswer": "Thank you"
-          }
-        },
-        {
-          "id": "entry-4",
-          "word": "Por favor",
-          "meaning": "Please",
-          "examples": ["Una mesa por favor.", "Ayúdame por favor."],
-          "note": "",
-          "quiz": {
-            "question": "Used when asking for something politely:",
-            "options": ["Por favor", "Gracias", "De nada"],
-            "correctAnswer": "Por favor"
-          }
-        }
-      ]
-    },
-    {
-      "id": "module-2",
-      "title": "Basic Verbs",
-      "entries": [
-         {
-          "id": "entry-5",
-          "word": "Comer",
-          "meaning": "To eat",
-          "examples": ["Quiero comer pizza.", "¿A qué hora vamos a comer?"],
-          "note": "Regular -er verb.",
-          "quiz": {
-            "question": "Which action is this?",
-            "options": ["Sleeping", "Eating", "Running"],
-            "correctAnswer": "Eating"
-          }
-        },
-        {
-          "id": "entry-6",
-          "word": "Beber",
-          "meaning": "To drink",
-          "examples": ["Necesito beber agua.", "No beber alcohol."],
-          "note": "",
-          "quiz": {
-            "question": "Translate 'To drink'",
-            "options": ["Comer", "Beber", "Vivir"],
-            "correctAnswer": "Beber"
-          }
+          "headword": "Adiós",
+          "senses": [
+            {
+              "id": "sense-2-1",
+              "pos": "interjection",
+              "definition_en": "Used to express good wishes on parting",
+              "examples": ["Adiós, nos vemos mañana.", "Es difícil decir adiós."],
+              "note": "Standard farewell.",
+              "quiz": {
+                "question": "When do you use this?",
+                "options": ["When arriving", "When leaving", "When eating"],
+                "correctAnswerId": "When leaving"
+              }
+            }
+          ]
         }
       ]
     }
