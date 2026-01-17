@@ -283,7 +283,7 @@ export default function Module() {
                           {isCorrect ? "Correct!" : "Incorrect"}
                         </p>
                         <p className="text-sm opacity-90">
-                          {isCorrect ? "Great job mastering this sense." : "Give it another try."}
+                          {isCorrect ? "Great Job! Keep going!" : "Give it another try."}
                         </p>
                       </div>
                     </div>
