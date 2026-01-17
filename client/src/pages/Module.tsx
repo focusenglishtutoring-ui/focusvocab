@@ -166,20 +166,36 @@ export default function Module() {
                       Examples
                     </h3>
                     <ul className="space-y-3 pl-4">
-                      {currentSense.examples.map((ex, i) => (
-                        <li key={i} className="flex flex-col gap-1 text-lg text-muted-foreground italic">
-                          <div className="flex gap-3">
+                      {currentSense.examples.map((ex, i) => {
+                        // Handle both string and object formats
+                        const exText = typeof ex === 'string' ? ex : ex.text;
+                        const exTag = typeof ex === 'object' && ex.tag ? ex.tag : null;
+                        
+                        // Bold the headword (case-insensitive)
+                        const regex = new RegExp(`(${currentSense.headword})`, 'gi');
+                        const parts = exText.split(regex);
+                        
+                        return (
+                          <li key={i} className="text-lg text-muted-foreground italic">
                             <span className="text-border font-not-italic select-none">"</span>
-                            {ex.text}
+                            {parts.map((part, idx) => 
+                              regex.test(part) ? (
+                                <strong key={idx} className="font-semibold not-italic text-foreground">
+                                  {part}
+                                </strong>
+                              ) : (
+                                <span key={idx}>{part}</span>
+                              )
+                            )}
                             <span className="text-border font-not-italic select-none">"</span>
-                          </div>
-                          {ex.tag && (
-                            <span className="text-xs font-sans not-italic text-accent ml-6">
-                              ({ex.tag})
-                            </span>
-                          )}
-                        </li>
-                      ))}
+                            {exTag && (
+                              <span className="text-xs font-sans not-italic text-accent ml-1">
+                                ({exTag})
+                              </span>
+                            )}
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
 
