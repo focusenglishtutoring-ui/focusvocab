@@ -7,17 +7,17 @@
       "entries": [
         {
           "headword": "age",
-          "pos": "n.",
-          "zh": "年齡",
           "senses": [
             {
               "sense_order": 1,
+              "pos": "n.",
+              "zh": "年齡",
               "definition": "How old someone is",
               "note": null,
               "examples": [
-                "She is the same age as my sister.",
-                "What age do students take this test?",
-                "What is your age?"
+                { "text": "She is the same age as my sister.", "tag": null },
+                { "text": "What age do students take this test?", "tag": null },
+                { "text": "What is your age?", "tag": null }
               ],
               "check": {
                 "question": "What does age mean?",
@@ -31,12 +31,14 @@
             },
             {
               "sense_order": 2,
+              "pos": "v.",
+              "zh": "變老",
               "definition": "To become older over time",
               "note": null,
               "examples": [
-                "People age differently.",
-                "Wine aged well in this room.",
-                "Do people age faster under stress?"
+                { "text": "People age differently.", "tag": null },
+                { "text": "Wine aged well in this room.", "tag": "past simple" },
+                { "text": "Do people age faster under stress?", "tag": null }
               ],
               "check": {
                 "question": "What does age mean here?",
@@ -51,44 +53,18 @@
           ]
         },
         {
-          "headword": "ages",
-          "pos": "n.",
-          "zh": "很久",
-          "senses": [
-            {
-              "sense_order": 1,
-              "definition": "A very long time",
-              "note": null,
-              "examples": [
-                "I haven’t seen him for ages.",
-                "It took ages to finish the homework.",
-                "Have you been waiting for ages?"
-              ],
-              "check": {
-                "question": "What does ages mean?",
-                "choices": [
-                  "a very long time",
-                  "a short moment",
-                  "tomorrow"
-                ],
-                "answer": "A"
-              }
-            }
-          ]
-        },
-        {
           "headword": "aged",
-          "pos": "adj.",
-          "zh": "歲的",
           "senses": [
             {
               "sense_order": 1,
+              "pos": "adj.",
+              "zh": "歲的",
               "definition": "Used to say how old someone is",
               "note": null,
               "examples": [
-                "This class is for children aged 8 to 10.",
-                "They care for people aged over 65.",
-                "Is the game for kids aged under 12?"
+                { "text": "This class is for children aged 8 to 10.", "tag": null },
+                { "text": "They care for people aged over 65.", "tag": null },
+                { "text": "Is the game for kids aged under 12?", "tag": null }
               ],
               "check": {
                 "question": "What does aged tell you?",
@@ -103,18 +79,44 @@
           ]
         },
         {
-          "headword": "amaze",
-          "pos": "v",
-          "zh": "使驚訝",
+          "headword": "ages",
           "senses": [
             {
               "sense_order": 1,
+              "pos": "n.",
+              "zh": "很久",
+              "definition": "A very long time",
+              "note": null,
+              "examples": [
+                { "text": "I haven’t seen him for ages.", "tag": null },
+                { "text": "It took ages to finish the homework.", "tag": null },
+                { "text": "Have you been waiting for ages?", "tag": null }
+              ],
+              "check": {
+                "question": "What does ages mean?",
+                "choices": [
+                  "a very long time",
+                  "a short moment",
+                  "tomorrow"
+                ],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "amaze",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "使驚訝",
               "definition": "To surprise someone very much",
               "note": null,
               "examples": [
-                "Her skills amaze everyone.",
-                "The result amazed the teacher.",
-                "Did the performance amaze you?"
+                { "text": "Her skills amaze everyone.", "tag": null },
+                { "text": "The result amazed the teacher.", "tag": "past simple" },
+                { "text": "Did the performance amaze you?", "tag": null }
               ],
               "check": {
                 "question": "What does amaze mean?",
@@ -130,17 +132,17 @@
         },
         {
           "headword": "amazed",
-          "pos": "adj.",
-          "zh": "感到驚訝的",
           "senses": [
             {
               "sense_order": 1,
+              "pos": "adj.",
+              "zh": "感到驚訝的",
               "definition": "Feeling very surprised",
               "note": null,
               "examples": [
-                "I was amazed by the news.",
-                "They are amazed at his progress.",
-                "Were you amazed by the answer?"
+                { "text": "I was amazed by the news.", "tag": null },
+                { "text": "They are amazed at his progress.", "tag": null },
+                { "text": "Were you amazed by the answer?", "tag": null }
               ],
               "check": {
                 "question": "How does someone feel if they are amazed?",
@@ -156,17 +158,17 @@
         },
         {
           "headword": "amazing",
-          "pos": "adj.",
-          "zh": "驚人的",
           "senses": [
             {
               "sense_order": 1,
+              "pos": "adj.",
+              "zh": "驚人的",
               "definition": "Very surprising or very good",
               "note": null,
               "examples": [
-                "The view was amazing.",
-                "She has an amazing memory.",
-                "Was the trip amazing?"
+                { "text": "The view was amazing.", "tag": null },
+                { "text": "She has an amazing memory.", "tag": null },
+                { "text": "Was the trip amazing?", "tag": null }
               ],
               "check": {
                 "question": "What does amazing describe?",
@@ -182,17 +184,23 @@
         },
         {
           "headword": "announce",
-          "pos": "v.",
-          "zh": "宣布",
           "senses": [
             {
               "sense_order": 1,
+              "pos": "v.",
+              "zh": "宣布",
               "definition": "To tell people important news so everyone knows",
               "note": null,
               "examples": [
-                "The school announces the results today.",
-                "They announced the winner yesterday.",
-                "When did they announce the decision?"
+                {
+                  "text": "The school announces the results today.",
+                  "tag": "present simple –s"
+                },
+                {
+                  "text": "They announced the winner yesterday.",
+                  "tag": "past simple"
+                },
+                { "text": "When did they announce the decision?", "tag": null }
               ],
               "check": {
                 "question": "What does announce mean?",
@@ -208,17 +216,17 @@
         },
         {
           "headword": "announcement",
-          "pos": "n.",
-          "zh": "公告",
           "senses": [
             {
               "sense_order": 1,
+              "pos": "n.",
+              "zh": "公告",
               "definition": "A message that tells people important news",
               "note": null,
               "examples": [
-                "There was an announcement on the train.",
-                "We listened carefully to the announcement.",
-                "Did you hear the announcement?"
+                { "text": "There was an announcement on the train.", "tag": null },
+                { "text": "We listened carefully to the announcement.", "tag": null },
+                { "text": "Did you hear the announcement?", "tag": null }
               ],
               "check": {
                 "question": "What is an announcement?",
@@ -234,17 +242,23 @@
         },
         {
           "headword": "apologise",
-          "pos": "v.",
-          "zh": "道歉",
           "senses": [
             {
               "sense_order": 1,
+              "pos": "v.",
+              "zh": "道歉",
               "definition": "To say you are sorry",
               "note": null,
               "examples": [
-                "He apologises when he is late.",
-                "She apologised to the teacher.",
-                "Did you apologise for the mistake?"
+                {
+                  "text": "He apologises when he is late.",
+                  "tag": "present simple –s"
+                },
+                {
+                  "text": "She apologised to the teacher.",
+                  "tag": "past simple"
+                },
+                { "text": "Did you apologise for the mistake?", "tag": null }
               ],
               "check": {
                 "question": "What does apologise mean?",

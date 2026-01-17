@@ -8,16 +8,19 @@ export const quizSchema = z.object({
 
 export const senseSchema = z.object({
   sense_order: z.number(),
+  pos: z.string(),
+  zh: z.string(),
   definition: z.string(),
   note: z.string().nullable(),
-  examples: z.array(z.string()),
+  examples: z.array(z.object({
+    text: z.string(),
+    tag: z.string().nullable()
+  })),
   check: quizSchema,
 });
 
 export const entrySchema = z.object({
   headword: z.string(),
-  pos: z.string(),
-  zh: z.string(),
   senses: z.array(senseSchema),
 });
 

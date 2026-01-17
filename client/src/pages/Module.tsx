@@ -32,8 +32,7 @@ export default function Module() {
       entry.senses.map(sense => ({
         ...sense,
         headword: entry.headword,
-        pos: entry.pos,
-        zh: entry.zh
+        // pos, zh are now missing from entry in JSON, they might be in sense or ignored
       }))
     );
   }, [module]);
@@ -142,7 +141,9 @@ export default function Module() {
             >
               <Card className="overflow-hidden border-2 shadow-lg">
                 <div className="bg-primary/5 p-8 text-center border-b border-border/50">
-                  <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">{currentSense.pos} · {currentSense.zh}</p>
+                  <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">
+                    {currentSense.pos} {currentSense.zh ? `· ${currentSense.zh}` : ""}
+                  </p>
                   <h1 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-4">
                     {currentSense.headword}
                   </h1>
@@ -166,10 +167,17 @@ export default function Module() {
                     </h3>
                     <ul className="space-y-3 pl-4">
                       {currentSense.examples.map((ex, i) => (
-                        <li key={i} className="flex gap-3 text-lg text-muted-foreground italic">
-                          <span className="text-border font-not-italic select-none">"</span>
-                          {ex}
-                          <span className="text-border font-not-italic select-none">"</span>
+                        <li key={i} className="flex flex-col gap-1 text-lg text-muted-foreground italic">
+                          <div className="flex gap-3">
+                            <span className="text-border font-not-italic select-none">"</span>
+                            {ex.text}
+                            <span className="text-border font-not-italic select-none">"</span>
+                          </div>
+                          {ex.tag && (
+                            <span className="text-xs font-sans not-italic text-accent ml-6">
+                              ({ex.tag})
+                            </span>
+                          )}
                         </li>
                       ))}
                     </ul>
