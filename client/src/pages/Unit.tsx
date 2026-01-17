@@ -62,7 +62,9 @@ export default function Unit() {
                           <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{module.title}</h3>
                           <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1">
                             <Layers className="w-4 h-4" />
-                            <span>{module.entries.length} words</span>
+                            <span>
+                              {module.entries.reduce((acc, entry) => acc + entry.senses.length, 0)} learning cards
+                            </span>
                           </div>
                         </div>
                       </div>
