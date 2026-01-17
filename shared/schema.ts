@@ -2,34 +2,33 @@ import { z } from "zod";
 
 export const quizSchema = z.object({
   question: z.string(),
-  options: z.array(z.string()),
-  correctAnswerId: z.string(),
+  choices: z.array(z.string()),
+  answer: z.string(), // "A", "B", "C"
 });
 
 export const senseSchema = z.object({
-  id: z.string(),
-  pos: z.string(),
-  definition_en: z.string(),
+  sense_order: z.number(),
+  definition: z.string(),
+  note: z.string().nullable(),
   examples: z.array(z.string()),
-  note: z.string().optional(),
-  quiz: quizSchema,
+  check: quizSchema,
 });
 
 export const entrySchema = z.object({
-  id: z.string(),
   headword: z.string(),
+  pos: z.string(),
+  zh: z.string(),
   senses: z.array(senseSchema),
 });
 
 export const moduleSchema = z.object({
-  id: z.string(),
+  order: z.number(),
   title: z.string(),
   entries: z.array(entrySchema),
 });
 
 export const unitSchema = z.object({
-  id: z.string(),
-  title: z.string(),
+  unit_id: z.string(),
   modules: z.array(moduleSchema),
 });
 

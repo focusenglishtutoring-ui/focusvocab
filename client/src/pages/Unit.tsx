@@ -2,7 +2,7 @@ import { Layout } from "@/components/Layout";
 import { Button } from "@/components/Button";
 import { Card, CardContent } from "@/components/Card";
 import { useUnit } from "@/hooks/use-content";
-import { Link, useRoute } from "wouter";
+import { Link } from "wouter";
 import { ChevronRight, Layers, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -38,25 +38,25 @@ export default function Unit() {
           </Link>
           <div>
             <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-1">Unit Overview</p>
-            <h1 className="text-3xl font-bold tracking-tight">{unit.title}</h1>
+            <h1 className="text-3xl font-bold tracking-tight">{unit.unit_id}</h1>
           </div>
         </div>
 
         <div className="grid gap-4">
           {unit.modules.map((module, index) => (
             <motion.div
-              key={module.id}
+              key={module.order}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <Link href={`/unit/${unit.id}/module/${module.id}`}>
+              <Link href={`/unit/${unit.unit_id}/module/${module.order}`}>
                 <div className="group block cursor-pointer">
                   <Card className="hover:border-primary/50 hover:shadow-md transition-all duration-300">
                     <CardContent className="p-6 flex items-center justify-between">
                       <div className="flex items-center gap-4">
                         <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-lg group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                          {index + 1}
+                          {module.order}
                         </div>
                         <div>
                           <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{module.title}</h3>

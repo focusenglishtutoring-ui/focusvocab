@@ -19,19 +19,21 @@ export default function Module() {
   // State
   const [currentIndex, setCurrentIndex] = useState(0);
   const [step, setStep] = useState<Step>("learn");
-  const [selectedAnswerId, setSelectedAnswerId] = useState<string | null>(null);
+  const [selectedChoiceIndex, setSelectedChoiceIndex] = useState<number | null>(null);
   const [isAnswerChecked, setIsAnswerChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
 
   // Derived data
-  const module = useMemo(() => unit?.modules.find(m => m.id === params?.moduleId), [unit, params?.moduleId]);
+  const module = useMemo(() => unit?.modules.find(m => String(m.order) === params?.moduleId || m.title === params?.moduleId), [unit, params?.moduleId]);
   
   const flattenedSenses = useMemo(() => {
     if (!module) return [];
     return module.entries.flatMap(entry => 
       entry.senses.map(sense => ({
         ...sense,
-        headword: entry.headword
+        headword: entry.headword,
+        pos: entry.pos,
+        zh: entry.zh
       }))
     );
   }, [module]);
@@ -53,14 +55,16 @@ export default function Module() {
   };
 
   const handleCheckAnswer = () => {
-    if (!selectedAnswerId) return;
-    const correct = selectedAnswerId === currentSense.quiz.correctAnswerId;
+    if (selectedChoiceIndex === null) return;
+    const answerMap: Record<string, number> = { "A": 0, "B": 1, "C": 2 };
+    const correctIndex = answerMap[currentSense.check.answer];
+    const correct = selectedChoiceIndex === correctIndex;
     setIsCorrect(correct);
     setIsAnswerChecked(true);
   };
 
   const handleNextSense = () => {
-    setSelectedAnswerId(null);
+    setSelectedChoiceIndex(null);
     setIsAnswerChecked(false);
     setIsCorrect(false);
     
@@ -73,7 +77,7 @@ export default function Module() {
   };
 
   const handleRetry = () => {
-    setSelectedAnswerId(null);
+    setSelectedChoiceIndex(null);
     setIsAnswerChecked(false);
     setIsCorrect(false);
   };
@@ -138,7 +142,7 @@ export default function Module() {
             >
               <Card className="overflow-hidden border-2 shadow-lg">
                 <div className="bg-primary/5 p-8 text-center border-b border-border/50">
-                  <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">{currentSense.pos}</p>
+                  <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">{currentSense.pos} · {currentSense.zh}</p>
                   <h1 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-4">
                     {currentSense.headword}
                   </h1>
@@ -151,7 +155,7 @@ export default function Module() {
                       Definition
                     </h3>
                     <p className="text-xl text-muted-foreground leading-relaxed pl-4">
-                      {currentSense.definition_en}
+                      {currentSense.definition}
                     </p>
                   </div>
 
@@ -206,18 +210,20 @@ export default function Module() {
                       Comprehension Check
                     </span>
                     <h3 className="text-2xl font-bold leading-tight">
-                      {currentSense.quiz.question}
+                      {currentSense.check.question}
                     </h3>
                   </div>
 
                   <div className="grid gap-3">
-                    {currentSense.quiz.options.map((option) => {
-                      const isSelected = selectedAnswerId === option;
+                    {currentSense.check.choices.map((choice, index) => {
+                      const isSelected = selectedChoiceIndex === index;
+                      const answerMap: Record<string, number> = { "A": 0, "B": 1, "C": 2 };
+                      const correctIndex = answerMap[currentSense.check.answer];
                       
                       let variantStyles = "hover:border-primary hover:bg-primary/5 border-border bg-card";
                       
                       if (isAnswerChecked) {
-                        if (option === currentSense.quiz.correctAnswerId) {
+                        if (index === correctIndex) {
                           variantStyles = "border-green-500 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300";
                         } else if (isSelected && !isCorrect) {
                           variantStyles = "border-red-500 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300";
@@ -230,16 +236,16 @@ export default function Module() {
 
                       return (
                         <button
-                          key={option}
+                          key={index}
                           disabled={isAnswerChecked}
-                          onClick={() => setSelectedAnswerId(option)}
+                          onClick={() => setSelectedChoiceIndex(index)}
                           className={cn(
                             "w-full text-left p-4 rounded-xl border-2 transition-all duration-200 flex items-center justify-between group",
                             variantStyles
                           )}
                         >
-                          <span className="font-medium text-lg">{option}</span>
-                          {isAnswerChecked && option === currentSense.quiz.correctAnswerId && (
+                          <span className="font-medium text-lg">{String.fromCharCode(65 + index)}. {choice}</span>
+                          {isAnswerChecked && index === correctIndex && (
                             <Check className="w-5 h-5 text-green-600" />
                           )}
                           {isAnswerChecked && isSelected && !isCorrect && (
@@ -301,7 +307,7 @@ export default function Module() {
                     <Button 
                       size="lg" 
                       onClick={handleCheckAnswer} 
-                      disabled={!selectedAnswerId}
+                      disabled={selectedChoiceIndex === null}
                       className="text-lg px-8 h-14 rounded-full w-full sm:w-auto shadow-lg"
                     >
                       Check Answer
