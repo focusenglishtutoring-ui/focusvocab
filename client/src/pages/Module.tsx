@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/Card";
 import { ProgressBar } from "@/components/ProgressBar";
 import { useUnit } from "@/hooks/use-content";
 import { useRoute, useLocation } from "wouter";
-import { Check, X, ArrowRight, RotateCcw, Home } from "lucide-react";
+import { Check, X, ArrowRight, RotateCcw, Home, Trophy } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -122,9 +122,9 @@ export default function Module() {
                   <Home className="mr-2 w-5 h-5" />
                   Back to Unit
                 </Button>
-                <Button size="lg" onClick={() => window.location.reload()}>
-                  <RotateCcw className="mr-2 w-5 h-5" />
-                  Review Again
+                <Button size="lg" onClick={() => setLocation(`/unit/${unit.unit_id}/module/${params?.moduleId}/quiz`)}>
+                  <Trophy className="mr-2 w-5 h-5" />
+                  Start End-of-Module Quiz
                 </Button>
               </div>
             </motion.div>

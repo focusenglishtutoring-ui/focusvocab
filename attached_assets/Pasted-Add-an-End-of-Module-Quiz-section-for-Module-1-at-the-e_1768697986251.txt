@@ -1,0 +1,116 @@
+Add an “End of Module Quiz” section for Module 1 at the end of the module flow. This quiz has 10 multiple-choice questions, shows one question at a time (preferred) or all at once (acceptable), and provides instant grading after submission.
+
+REQUIREMENTS:
+1) Quiz content is fixed (no AI generation). Use the exact questions/options below.
+2) Student view:
+   - Do NOT show target words (only show question text and A/B/C options).
+   - Allow selecting exactly one option per question.
+   - “Submit Quiz” button enabled only when all questions are answered.
+3) Results view after submit:
+   - Show score: “You got X/10”
+   - Show per-question feedback:
+     - The question text
+     - Student selected choice (A/B/C)
+     - Correct choice (A/B/C)
+     - Mark each as Correct/Incorrect
+   - Provide “Retry Quiz” button to reset answers.
+4) Scoring:
+   - Score is simply number correct / 10.
+5) Data model:
+   - Store the quiz as a local constant (array of objects).
+   - Each object includes: id, prompt, choices {A,B,C}, correct ("A"|"B"|"C")
+6) UX:
+   - Keep UI clean and mobile-friendly.
+   - Provide progress indicator: “Question i of 10” if showing one at a time.
+7) Persistence (nice-to-have):
+   - Save best score in localStorage as module1QuizBestScore, display it on results screen.
+
+QUIZ DATA (MODULE 1):
+Use this exact quiz content and correct answers.
+
+[
+  {
+    "id": 1,
+    "prompt": "It took ______ to finish the homework.",
+    "choices": {"A":"aged","B":"age","C":"ages"},
+    "correct": "C"
+  },
+  {
+    "id": 2,
+    "prompt": "The school will ______ the results tomorrow.",
+    "choices": {"A":"announce","B":"announcement","C":"apologise"},
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "prompt": "The view from the mountain was ______.",
+    "choices": {"A":"amazed","B":"amazing","C":"amaze"},
+    "correct": "B"
+  },
+  {
+    "id": 4,
+    "prompt": "Choose the sentence that sounds correct.",
+    "choices": {
+      "A":"He gave an apologise to the teacher.",
+      "B":"He apologised for being late.",
+      "C":"The apologise was short."
+    },
+    "correct": "B"
+  },
+  {
+    "id": 5,
+    "prompt": "What is your ______?",
+    "choices": {"A":"age","B":"ages","C":"aged"},
+    "correct": "A"
+  },
+  {
+    "id": 6,
+    "prompt": "Choose the sentence that sounds correct.",
+    "choices": {
+      "A":"The teacher announcement the test date.",
+      "B":"She will announcement tomorrow.",
+      "C":"We listened carefully to the announcement."
+    },
+    "correct": "C"
+  },
+  {
+    "id": 7,
+    "prompt": "The class is for children ______ 8 to 10.",
+    "choices": {"A":"age","B":"aged","C":"ages"},
+    "correct": "B"
+  },
+  {
+    "id": 8,
+    "prompt": "Her skills ______ everyone.",
+    "choices": {"A":"amazed","B":"amaze","C":"amazing"},
+    "correct": "B"
+  },
+  {
+    "id": 9,
+    "prompt": "Choose the sentence that sounds correct.",
+    "choices": {
+      "A":"What age do students take this test?",
+      "B":"This class is for children aged 8 to 10.",
+      "C":"People age differently under stress."
+    },
+    "correct": "C"
+  },
+  {
+    "id": 10,
+    "prompt": "I was ______ by the news.",
+    "choices": {"A":"amazed","B":"amazing","C":"amaze"},
+    "correct": "A"
+  }
+]
+
+IMPLEMENTATION NOTES:
+- If you already have routing/screens for modules, add a new screen/route “/module/1/quiz” and place a “Start End-of-Module Quiz” button at the end of Module 1 content that navigates to it.
+- If using React, implement as a component <ModuleQuiz moduleId="1" quizData={...} />.
+- If using vanilla JS, implement in a dedicated section div and render dynamically.
+
+DELIVERABLE:
+Return the updated code (or file diffs) showing:
+- New quiz screen/component
+- Wiring from the end of Module 1 → quiz
+- Clean UI and working grading + retry
+- Optional best-score localStorage support

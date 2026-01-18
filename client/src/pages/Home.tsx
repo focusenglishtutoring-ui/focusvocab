@@ -42,11 +42,10 @@ export default function Home() {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground mb-4">
-              Master Your <span className="text-primary bg-primary/10 px-2 rounded-lg inline-block">Vocabulary</span>
+              B1 Preliminary English Test (PET) <span className="text-primary bg-primary/10 px-2 rounded-lg inline-block">Vocabulary Builder</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Expand your lexicon with our structured learning modules. 
-              Learn deeply, practice instantly, and retain forever.
+              Build the exact vocabulary your child needs for the B1 Preliminary (PET) exam — so they don’t lose marks just because they didn’t understand one key word.<br></br> 建立孩子應付 B1 Preliminary（PET）考試所需的關鍵字彙，避免因為不懂一個重要單字而失分。
             </p>
           </motion.div>
 

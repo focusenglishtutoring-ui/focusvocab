@@ -1,8 +1,8 @@
-# VocabMaster - Vocabulary Learning Application
+# FocusVocab - Vocabulary Learning Application
 
 ## Overview
 
-VocabMaster is a vocabulary learning web application built with React and Express. It provides a structured learning experience where users can navigate through units containing modules of vocabulary entries, learn word definitions, and test their knowledge with quizzes. The application features a clean, academic design focused on effective language learning.
+FocusVocav is a vocabulary learning web application built with React and Express. It provides a structured learning experience where users can navigate through units containing modules of vocabulary entries, learn word definitions, and test their knowledge with quizzes. The application features a clean, academic design focused on effective language learning.
 
 The app currently serves Spanish vocabulary content from a static JSON file, with a simple learn-then-quiz flow for each vocabulary sense. Progress is ephemeral and resets on page refresh.
 

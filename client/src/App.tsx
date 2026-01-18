@@ -7,6 +7,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Unit from "@/pages/Unit";
 import Module from "@/pages/Module";
+import ModuleQuiz from "@/pages/ModuleQuiz";
 
 function Router() {
   return (
@@ -14,6 +15,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/unit" component={Unit} />
       <Route path="/unit/:unitId/module/:moduleId" component={Module} />
+      <Route path="/unit/:unitId/module/:moduleId/quiz" component={ModuleQuiz} />
       <Route component={NotFound} />
     </Switch>
   );
