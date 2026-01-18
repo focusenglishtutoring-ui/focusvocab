@@ -110,7 +110,7 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
     },
     {
       "id": 4,
-      "prompt": "Choose the sentence that uses *apply* correctly (meaning: put something on).",
+      "prompt": "Choose the sentence that uses 'apply' correctly (meaning: put something on).",
       "choices": {
         "A":"She applied for the course last week.",
         "B":"He applied the program yesterday.",
@@ -126,7 +126,7 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
     },
     {
       "id": 6,
-      "prompt": "Choose the sentence that uses *aim* correctly as a verb.",
+      "prompt": "Choose the sentence that uses 'aim' correctly as a verb.",
       "choices": {
         "A":"I aim to finish early today.",
         "B":"My aim is to finish early today.",
@@ -154,7 +154,7 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
     },
     {
       "id": 10,
-      "prompt": "Choose the sentence that uses *apply* correctly (meaning: ask for a job/course).",
+      "prompt": "Choose the sentence that uses 'apply' correctly (meaning: ask for a job/course).",
       "choices": {
         "A":"She applies make-up before work.",
         "B":"He applied for a position at the new company last week.",
