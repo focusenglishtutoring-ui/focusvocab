@@ -38,7 +38,7 @@ export default function Unit() {
           </Link>
           <div>
             <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-1">Unit Overview</p>
-            <h1 className="text-3xl font-bold tracking-tight">{unit.unit_id}</h1>
+            <h1 className="text-3xl font-bold tracking-tight whitespace-pre-line">{unit.unit_id}</h1>
           </div>
         </div>
 
