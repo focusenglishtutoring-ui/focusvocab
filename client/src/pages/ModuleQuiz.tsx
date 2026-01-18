@@ -157,7 +157,7 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       "prompt": "Choose the sentence that uses apply correctly (meaning: ask for a job/course).",
       "choices": {
         "A":"She applies make-up before work.",
-        "B":"He applied for the course last week.",
+        "B":"He applied for a position at the new company last week.",
         "C":"The nurse applied pressure to the wound."
       },
       "correct": "B"

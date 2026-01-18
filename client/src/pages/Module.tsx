@@ -114,7 +114,7 @@ export default function Module() {
               <div className="w-24 h-24 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Check className="w-12 h-12" />
               </div>
-              <h1 className="text-4xl font-bold text-foreground">Module Complete!</h1>
+              <h1 className="text-4xl font-bold text-foreground">Module {params?.moduleId} Complete!</h1>
               <p className="text-xl text-muted-foreground">
                 You've finished Module {params?.moduleId}! Think you have what it takes to get 100% on the Module {params?.moduleId} Quiz? Let's go!
               </p>
