@@ -110,7 +110,7 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
     },
     {
       "id": 4,
-      "prompt": "Choose the sentence that uses apply correctly (meaning: put something on).",
+      "prompt": "Choose the sentence that uses *apply* correctly (meaning: put something on).",
       "choices": {
         "A":"She applied for the course last week.",
         "B":"He applied the program yesterday.",
@@ -126,7 +126,7 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
     },
     {
       "id": 6,
-      "prompt": "Choose the sentence that uses aim correctly as a verb.",
+      "prompt": "Choose the sentence that uses *aim* correctly as a verb.",
       "choices": {
         "A":"I aim to finish early today.",
         "B":"My aim is to finish early today.",
@@ -154,7 +154,7 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
     },
     {
       "id": 10,
-      "prompt": "Choose the sentence that uses apply correctly (meaning: ask for a job/course).",
+      "prompt": "Choose the sentence that uses *apply* correctly (meaning: ask for a job/course).",
       "choices": {
         "A":"She applies make-up before work.",
         "B":"He applied for a position at the new company last week.",
@@ -208,6 +208,16 @@ export default function ModuleQuiz() {
     window.scrollTo(0, 0);
   };
 
+  const renderFormattedPrompt = (text: string) => {
+    const parts = text.split(/(\*.*?\*)/g);
+    return parts.map((part, i) => {
+      if (part.startsWith('*') && part.endsWith('*')) {
+        return <em key={i} className="font-italic not-italic italic">{part.slice(1, -1)}</em>;
+      }
+      return part;
+    });
+  };
+
   if (isSubmitted) {
     const score = quizData.reduce((acc, q) => acc + (answers[q.id] === q.correct ? 1 : 0), 0);
     return (
@@ -239,7 +249,7 @@ export default function ModuleQuiz() {
                       <div className="flex justify-between items-start gap-4">
                         <div className="space-y-2">
                           <p className="text-sm font-bold text-muted-foreground uppercase tracking-wider">Question {idx + 1}</p>
-                          <p className="text-lg font-medium">{q.prompt}</p>
+                          <p className="text-lg font-medium">{renderFormattedPrompt(q.prompt)}</p>
                           <div className="flex flex-wrap gap-4 mt-2">
                             <p className="text-sm">
                               <span className="text-muted-foreground">Your answer:</span>{" "}
@@ -304,7 +314,7 @@ export default function ModuleQuiz() {
         <Card className="border-2 shadow-xl">
           <CardContent className="p-8 space-y-8">
             <h3 className="text-2xl font-bold leading-tight">
-              {currentQuestion.prompt}
+              {renderFormattedPrompt(currentQuestion.prompt)}
             </h3>
 
             <div className="grid gap-4">
