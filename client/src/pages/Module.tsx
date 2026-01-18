@@ -115,7 +115,9 @@ export default function Module() {
                 <Check className="w-12 h-12" />
               </div>
               <h1 className="text-4xl font-bold text-foreground">Module Complete!</h1>
-              <p className="text-xl text-muted-foreground">You've mastered {flattenedSenses.length} senses.</p>
+              <p className="text-xl text-muted-foreground">
+                You've finished module! Think you have what it takes to get 100% on the Module {params?.moduleId} Quiz? Let's go!
+              </p>
               
               <div className="flex gap-4 justify-center pt-8">
                 <Button variant="outline" size="lg" onClick={() => setLocation("/unit")}>
