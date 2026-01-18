@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'wouter';
-import logoImg from "@assets/Focus_English_Vocab_Test_Prep_S_1768698362503.png";
+import logoImg from "@assets/Focus_English_Vocab_Test_Prep_S_1768705612768.png";
 
 interface LayoutProps {
   children: React.ReactNode;
