@@ -718,7 +718,7 @@
               "sense_order": 1,
               "pos": "adj./adv.",
               "zh": "相像地；相同地",
-              "definition": "Very similar to each other",
+              "definition": "Almost the same as one another.",
               "note": null,
               "examples": [
                 { "text": "The twins look alike.", "tag": null },
@@ -729,7 +729,7 @@
                 "question": "What does alike mean?",
                 "choices": [
                   "very different",
-                  "very similar",
+                  "almost the same",
                   "very loud"
                 ],
                 "answer": "B"

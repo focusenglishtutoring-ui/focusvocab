@@ -173,8 +173,14 @@ export default function Module() {
                         const exText = typeof ex === 'string' ? ex : ex.text;
                         const exTag = typeof ex === 'object' && ex.tag ? ex.tag : null;
                         
-                        // Bold the headword (case-insensitive)
-                        const regex = new RegExp(`(${currentSense.headword})`, 'gi');
+                        // Split headword into individual words to bold separately
+                        // This handles multi-word headwords like "air conditioning / air conditioner"
+                        const headwordParts = currentSense.headword.split("/").map(p => p.trim());
+                        const escapedParts = headwordParts
+                          .map(p => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+                          .join("|");
+                        
+                        const regex = new RegExp(`(${escapedParts})`, "gi");
                         const parts = exText.split(regex);
                         
                         return (
