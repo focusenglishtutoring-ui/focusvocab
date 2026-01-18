@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'wouter';
-import { BookOpen } from 'lucide-react';
+import logoImg from "@assets/Focus_English_Vocab_Test_Prep_S_1768698362503.png";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -12,8 +12,8 @@ export function Layout({ children }: LayoutProps) {
       <header className="border-b border-border/40 bg-background/80 backdrop-blur-md sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 group cursor-pointer hover:opacity-80 transition-opacity">
-            <div className="w-8 h-8 rounded-lg bg-primary text-primary-foreground flex items-center justify-center shadow-md group-hover:shadow-lg transition-all">
-              <BookOpen className="w-5 h-5" />
+            <div className="w-10 h-10 flex items-center justify-center transition-all">
+              <img src={logoImg} alt="FocusVocab Logo" className="w-full h-full object-contain" />
             </div>
             <span className="font-bold text-lg tracking-tight">FocusVocab</span>
           </Link>
