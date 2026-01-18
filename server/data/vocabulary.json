@@ -529,6 +529,267 @@
           ]
         }
       ]
+    },
+    {
+      "order": 3,
+      "title": "Module 3",
+      "entries": [
+        {
+          "headword": "air conditioning / air conditioner",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "空調；冷氣",
+              "definition": "Cool air in a room or building (air conditioning) or the machine that makes it (air conditioner)",
+              "note": null,
+              "examples": [
+                { "text": "The air conditioning is on in the classroom.", "tag": null },
+                { "text": "We bought a new air conditioner for the living room.", "tag": null },
+                { "text": "Is the air conditioning working today?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an air conditioner?",
+                "choices": [
+                  "the machine that makes the air cool",
+                  "a place where planes land",
+                  "a kind of phone"
+                ],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "air force",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "空軍",
+              "definition": "The part of a country’s army that uses planes",
+              "note": null,
+              "examples": [
+                { "text": "He works in the air force.", "tag": null },
+                { "text": "The air force uses many planes.", "tag": null },
+                { "text": "Is the air force part of the army?", "tag": null }
+              ],
+              "check": {
+                "question": "What is the air force?",
+                "choices": [
+                  "the police on the street",
+                  "the army that uses planes",
+                  "a place where planes land"
+                ],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "airline",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "航空公司",
+              "definition": "A company that flies people to different places",
+              "note": null,
+              "examples": [
+                { "text": "This airline flies to Japan.", "tag": null },
+                { "text": "We chose a cheap airline.", "tag": null },
+                { "text": "Which airline did you use?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an airline?",
+                "choices": [
+                  "a company that flies people",
+                  "a place to wait for planes",
+                  "a kind of map"
+                ],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "airport",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "機場",
+              "definition": "A place where planes arrive and leave",
+              "note": null,
+              "examples": [
+                { "text": "We arrived at the airport early.", "tag": null },
+                { "text": "The airport was very busy.", "tag": null },
+                { "text": "Is the airport far from here?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an airport?",
+                "choices": [
+                  "a place for planes",
+                  "a place to buy tickets",
+                  "a kind of bus"
+                ],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "alarm",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "警報；鬧鐘",
+              "definition": "A sound or device that warns people or wakes them up",
+              "note": null,
+              "examples": [
+                { "text": "The alarm went off loudly.", "tag": null },
+                { "text": "My alarm wakes me at six.", "tag": null },
+                { "text": "Did you hear the alarm?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an alarm?",
+                "choices": [
+                  "a quiet message",
+                  "a warning or waking sound",
+                  "a school subject"
+                ],
+                "answer": "B"
+              }
+            },
+            {
+              "sense_order": 2,
+              "pos": "v.",
+              "zh": "使驚慌",
+              "definition": "To make someone feel scared or worried",
+              "note": null,
+              "examples": [
+                { "text": "The news alarmed many people.", "tag": "past simple" },
+                { "text": "Loud noises alarm the baby.", "tag": null },
+                { "text": "Did the sound alarm you?", "tag": null }
+              ],
+              "check": {
+                "question": "What does alarm mean here?",
+                "choices": [
+                  "to make someone laugh",
+                  "to make someone hungry",
+                  "to make someone feel scared"
+                ],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "album",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "相簿；專輯",
+              "definition": "A book or collection for photos or music",
+              "note": null,
+              "examples": [
+                { "text": "She showed me her photo album.", "tag": null },
+                { "text": "His new album is popular.", "tag": null },
+                { "text": "Did you listen to the album?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an album?",
+                "choices": [
+                  "a collection of photos or music",
+                  "a type of ticket",
+                  "a kind of jacket"
+                ],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "alike",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adj./adv.",
+              "zh": "相像地；相同地",
+              "definition": "Very similar to each other",
+              "note": null,
+              "examples": [
+                { "text": "The twins look alike.", "tag": null },
+                { "text": "These two bags are alike.", "tag": null },
+                { "text": "Do the pictures look alike?", "tag": null }
+              ],
+              "check": {
+                "question": "What does alike mean?",
+                "choices": [
+                  "very different",
+                  "very similar",
+                  "very loud"
+                ],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "alive",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adj.",
+              "zh": "活著的",
+              "definition": "Living, not dead",
+              "note": null,
+              "examples": [
+                { "text": "The animal is still alive.", "tag": null },
+                { "text": "She felt alive again after resting.", "tag": null },
+                { "text": "Is the plant alive?", "tag": null }
+              ],
+              "check": {
+                "question": "What does alive mean?",
+                "choices": [
+                  "broken",
+                  "asleep",
+                  "living"
+                ],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "all right / alright",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adj./adv.",
+              "zh": "好的；沒問題",
+              "definition": "Used to say something is OK or acceptable",
+              "note": "“All right” and “alright” mean the same thing. “All right” is more common in formal writing.",
+              "examples": [
+                { "text": "The answer is all right.", "tag": null },
+                { "text": "It’s alright to ask for help.", "tag": null },
+                { "text": "Is everything all right?", "tag": null }
+              ],
+              "check": {
+                "question": "What does all right / alright mean?",
+                "choices": [
+                  "very bad",
+                  "very hungry",
+                  "OK or fine"
+                ],
+                "answer": "C"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

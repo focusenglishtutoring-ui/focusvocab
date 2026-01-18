@@ -162,6 +162,68 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       },
       "correct": "B"
     }
+  ],
+  "3": [
+    {
+      "id": 1,
+      "prompt": "What is an *air conditioner*?",
+      "choices": {"A":"the machine that makes the air cool","B":"a place where planes land","C":"a kind of phone"},
+      "correct": "A"
+    },
+    {
+      "id": 2,
+      "prompt": "What is the *air force*?",
+      "choices": {"A":"the police on the street","B":"the army that uses planes","C":"a place where planes land"},
+      "correct": "B"
+    },
+    {
+      "id": 3,
+      "prompt": "What is an *airline*?",
+      "choices": {"A":"a company that flies people","B":"a place to wait for planes","C":"a kind of map"},
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "prompt": "What is an *airport*?",
+      "choices": {"A":"a place for planes","B":"a place to buy tickets","C":"a kind of bus"},
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "prompt": "What is an *alarm*?",
+      "choices": {"A":"a quiet message","B":"a warning or waking sound","C":"a school subject"},
+      "correct": "B"
+    },
+    {
+      "id": 6,
+      "prompt": "What does *alarm* mean (when used as a verb)?",
+      "choices": {"A":"to make someone laugh","B":"to make someone hungry","C":"to make someone feel scared"},
+      "correct": "C"
+    },
+    {
+      "id": 7,
+      "prompt": "What is an *album*?",
+      "choices": {"A":"a collection of photos or music","B":"a type of ticket","C":"a kind of jacket"},
+      "correct": "A"
+    },
+    {
+      "id": 8,
+      "prompt": "What does *alike* mean?",
+      "choices": {"A":"very different","B":"very similar","C":"very loud"},
+      "correct": "B"
+    },
+    {
+      "id": 9,
+      "prompt": "What does *alive* mean?",
+      "choices": {"A":"broken","B":"asleep","C":"living"},
+      "correct": "C"
+    },
+    {
+      "id": 10,
+      "prompt": "What does *all right / alright* mean?",
+      "choices": {"A":"very bad","B":"very hungry","C":"OK or fine"},
+      "correct": "C"
+    }
   ]
 };
 
