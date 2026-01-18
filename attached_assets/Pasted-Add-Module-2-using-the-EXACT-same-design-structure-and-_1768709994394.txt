@@ -1,0 +1,140 @@
+Add Module 2 using the EXACT same design structure and UX flow as Module 1. Do NOT redesign anything.
+
+FLOW PER WORD (same as Module 1):
+1) Display: word + part of speech + Traditional Chinese
+2) Display: “What does it mean?” + meaning sentence(s)
+3) Display: “Examples:” + 3 examples where the target vocabulary word is bolded
+   - For verbs: add bracketed tense labels ONLY when the verb form changes (e.g., appears = present simple -s; appeared = past simple; aimed = past simple).
+   - Do NOT add tense labels for nouns/adjectives or when the verb form is unchanged.
+4) Display: “Check your understanding:” + a 3-option multiple choice (A/B/C). Do NOT show the correct answer in the UI.
+5) Next button goes to the next word entry.
+
+
+DATA TO ADD (MODULE 2):
+
+1) apology (n.) – 道歉
+Meaning: Something you say or do to show you are sorry.
+Examples:
+- He gave her an **apology** after the mistake.
+- She accepted his **apology**.
+- Did he make an **apology**?
+Check:
+Q: What is an **apology**?
+A) something you buy as a gift
+B) a school rule
+C) something you say or do to show you are sorry
+
+2) appear (v.) – 出現
+Meaning: To start to be seen.
+Examples:
+- A rainbow **appears** after the rain. (present simple –s)
+- Her name **appeared** on the list. (past simple)
+- Did a problem **appear** during the test?
+Check:
+Q: What does **appear** mean?
+A) to go away
+B) to start to be seen
+C) to break something
+
+3) appearance (n.) – 外表
+Meaning: The way someone or something looks.
+Examples:
+- His **appearance** changed a lot.
+- She cares about her **appearance**.
+- Did his **appearance** surprise you?
+Check:
+Q: What does **appearance** talk about?
+A) how someone looks
+B) how someone feels
+C) where someone lives
+
+4) apply (v.) – 申請
+Meaning: To try to get a job, school placement, or course by filling in a form.
+Examples:
+- She **applies** for jobs online. (present simple –s)
+- He **applied** for the course last week. (past simple)
+- Did you **apply** for the program?
+Check:
+Q: What does **apply** mean here?
+A) to try to get something by filling in a form
+B) to put something on
+C) to cancel a plan
+
+5) apply (v.) – 塗；施加
+Meaning: To put something onto something else.
+Examples:
+- She **applies** make-up before work. (present simple –s)
+- The nurse **applied** pressure to the wound. (past simple)
+- Did you **apply** cream to the skin?
+Check:
+Q: What does **apply** mean here?
+A) to ask for something
+B) to put something on
+C) to explain an idea
+
+6) application (n.) – 申請表
+Meaning: A form you fill in to try to get something.
+Examples:
+- I filled out an **application** online.
+- Her **application** was accepted.
+- Did you send the **application** yet?
+Check:
+Q: What is an **application**?
+A) a short story
+B) a phone call
+C) a form you fill in
+
+7) argue (v.) – 爭論
+Meaning: To be angry and fight with someone using words.
+Examples:
+- They **argue** about homework often.
+- He **argued** with his brother. (past simple)
+- Did they **argue** about the answer?
+Check:
+Q: What does **argue** mean?
+A) to fight with words
+B) to help someone
+C) to agree happily
+
+8) argument (n.) – 爭論
+Meaning: When people are angry and fight with each other using only words.
+Examples:
+- They had an **argument** last night.
+- The **argument** ended quickly.
+- Did the **argument** upset her?
+Check:
+Q: What is an **argument**?
+A) people working together
+B) people fighting with words
+C) people playing a game
+
+9) aim (n.) – 目標
+Meaning: Something you want to do or get.
+Examples:
+- Her **aim** is to pass the test.
+- The main **aim** of the class is learning.
+- What is your **aim**?
+Check:
+Q: What is an **aim**?
+A) something you want to do
+B) something you forget
+C) something you lose
+
+10) aim (v.) – 打算；目標是
+Meaning: To plan to do something.
+Examples:
+- The course **aims** to help students. (present simple –s)
+- He **aimed** to finish early. (past simple)
+- Do you **aim** to improve your English?
+Check:
+Q: What does **aim** mean here?
+A) to stop doing something
+B) to wait for someone
+C) to plan to do something
+
+IMPLEMENTATION REQUIREMENTS:
+- Store Module 2 using the same data structure/keys used for Module 1.
+- Add Module 2 to the module selector/navigation exactly like Module 1.
+- Ensure bold formatting renders correctly.
+- Do not modify Module 1 content.
+- End of module quiz will come soon, but not yet

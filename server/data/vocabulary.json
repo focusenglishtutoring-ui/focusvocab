@@ -273,6 +273,262 @@
           ]
         }
       ]
+    },
+    {
+      "order": 2,
+      "title": "Module 2",
+      "entries": [
+        {
+          "headword": "apology",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "道歉",
+              "definition": "Something you say or do to show you are sorry",
+              "note": null,
+              "examples": [
+                { "text": "He gave her an apology after the mistake.", "tag": null },
+                { "text": "She accepted his apology.", "tag": null },
+                { "text": "Did he make an apology?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an apology?",
+                "choices": [
+                  "something you buy as a gift",
+                  "a school rule",
+                  "something you say or do to show you are sorry"
+                ],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "appear",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "出現",
+              "definition": "To start to be seen",
+              "note": null,
+              "examples": [
+                { "text": "A rainbow appears after the rain.", "tag": "present simple –s" },
+                { "text": "Her name appeared on the list.", "tag": "past simple" },
+                { "text": "Did a problem appear during the test?", "tag": null }
+              ],
+              "check": {
+                "question": "What does appear mean?",
+                "choices": [
+                  "to go away",
+                  "to start to be seen",
+                  "to break something"
+                ],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "appearance",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "外表",
+              "definition": "The way someone or something looks",
+              "note": null,
+              "examples": [
+                { "text": "His appearance changed a lot.", "tag": null },
+                { "text": "She cares about her appearance.", "tag": null },
+                { "text": "Did his appearance surprise you?", "tag": null }
+              ],
+              "check": {
+                "question": "What does appearance talk about?",
+                "choices": [
+                  "how someone looks",
+                  "how someone feels",
+                  "where someone lives"
+                ],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "apply",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "申請",
+              "definition": "To try to get a job, school placement, or course by filling in a form",
+              "note": null,
+              "examples": [
+                { "text": "She applies for jobs online.", "tag": "present simple –s" },
+                { "text": "He applied for the course last week.", "tag": "past simple" },
+                { "text": "Did you apply for the program?", "tag": null }
+              ],
+              "check": {
+                "question": "What does apply mean here?",
+                "choices": [
+                  "to try to get something by filling in a form",
+                  "to put something on",
+                  "to cancel a plan"
+                ],
+                "answer": "A"
+              }
+            },
+            {
+              "sense_order": 2,
+              "pos": "v.",
+              "zh": "塗；施加",
+              "definition": "To put something onto something else",
+              "note": null,
+              "examples": [
+                { "text": "She applies make-up before work.", "tag": "present simple –s" },
+                { "text": "The nurse applied pressure to the wound.", "tag": "past simple" },
+                { "text": "Did you apply cream to the skin?", "tag": null }
+              ],
+              "check": {
+                "question": "What does apply mean here?",
+                "choices": [
+                  "to ask for something",
+                  "to put something on",
+                  "to explain an idea"
+                ],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "application",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "申請表",
+              "definition": "A form you fill in to try to get something",
+              "note": null,
+              "examples": [
+                { "text": "I filled out an application online.", "tag": null },
+                { "text": "Her application was accepted.", "tag": null },
+                { "text": "Did you send the application yet?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an application?",
+                "choices": [
+                  "a short story",
+                  "a phone call",
+                  "a form you fill in"
+                ],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "argue",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "爭論",
+              "definition": "To be angry and fight with someone using words",
+              "note": null,
+              "examples": [
+                { "text": "They argue about homework often.", "tag": null },
+                { "text": "He argued with his brother.", "tag": "past simple" },
+                { "text": "Did they argue about the answer?", "tag": null }
+              ],
+              "check": {
+                "question": "What does argue mean?",
+                "choices": [
+                  "to fight with words",
+                  "to help someone",
+                  "to agree happily"
+                ],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "argument",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "爭論",
+              "definition": "When people are angry and fight with each other using only words",
+              "note": null,
+              "examples": [
+                { "text": "They had an argument last night.", "tag": null },
+                { "text": "The argument ended quickly.", "tag": null },
+                { "text": "Did the argument upset her?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an argument?",
+                "choices": [
+                  "people working together",
+                  "people fighting with words",
+                  "people playing a game"
+                ],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "aim",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "目標",
+              "definition": "Something you want to do or get",
+              "note": null,
+              "examples": [
+                { "text": "Her aim is to pass the test.", "tag": null },
+                { "text": "The main aim of the class is learning.", "tag": null },
+                { "text": "What is your aim?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an aim?",
+                "choices": [
+                  "something you want to do",
+                  "something you forget",
+                  "something you lose"
+                ],
+                "answer": "A"
+              }
+            },
+            {
+              "sense_order": 2,
+              "pos": "v.",
+              "zh": "打算；目標是",
+              "definition": "To plan to do something",
+              "note": null,
+              "examples": [
+                { "text": "The course aims to help students.", "tag": "present simple –s" },
+                { "text": "He aimed to finish early.", "tag": "past simple" },
+                { "text": "Do you aim to improve your English?", "tag": null }
+              ],
+              "check": {
+                "question": "What does aim mean here?",
+                "choices": [
+                  "to stop doing something",
+                  "to wait for someone",
+                  "to plan to do something"
+                ],
+                "answer": "C"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
