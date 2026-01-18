@@ -1,0 +1,118 @@
+Add an “End of Module Quiz” section for Module 2 at the end of the module flow, implemented the same way as Module 1’s end-of-module quiz (same UI/UX patterns, same grading flow, same review + retry behavior).
+
+REQUIREMENTS:
+1) Quiz content is fixed (no AI generation). Use the exact questions/options/answers below.
+2) Student view:
+   - Do NOT show target words (only show question text and A/B/C options).
+   - Allow selecting exactly one option per question.
+   - “Submit Quiz” button enabled only when all questions are answered.
+3) Results view after submit:
+   - Show score: “You got X/10”
+   - Show per-question feedback:
+     - The question text
+     - Student selected choice (A/B/C)
+     - Correct choice (A/B/C)
+     - Mark each as Correct/Incorrect
+   - Provide “Retry Quiz” button to reset answers.
+4) Scoring:
+   - Score is simply number correct / 10.
+5) Data model:
+   - Store the quiz as a local constant (array of objects).
+   - Each object includes: id, prompt, choices {A,B,C}, correct ("A"|"B"|"C")
+6) UX:
+   - Match Module 1 quiz styling and behavior.
+   - Include progress indicator if Module 1 uses it (e.g., “Question i of 10”).
+7) Persistence (optional, match Module 1):
+   - Save best score in localStorage as module2QuizBestScore and display it on results screen (only if Module 1 does best-score).
+
+QUIZ DATA (MODULE 2):
+Use this exact quiz content and correct answers.
+
+[
+  {
+    "id": 1,
+    "prompt": "She cares a lot about her ______.",
+    "choices": {"A":"appearance","B":"appear","C":"apology"},
+    "correct": "A"
+  },
+  {
+    "id": 2,
+    "prompt": "A rainbow may ______ after the rain.",
+    "choices": {"A":"appearance","B":"appear","C":"application"},
+    "correct": "B"
+  },
+  {
+    "id": 3,
+    "prompt": "I filled out an ______ online for the course.",
+    "choices": {"A":"application","B":"apply","C":"argument"},
+    "correct": "A"
+  },
+  {
+    "id": 4,
+    "prompt": "Choose the sentence that uses apply correctly (meaning: put something on).",
+    "choices": {
+      "A":"She applied for the course last week.",
+      "B":"He applied the program yesterday.",
+      "C":"The nurse applied pressure to the wound."
+    },
+    "correct": "C"
+  },
+  {
+    "id": 5,
+    "prompt": "Their main ______ is to pass the test.",
+    "choices": {"A":"argument","B":"aim","C":"apology"},
+    "correct": "B"
+  },
+  {
+    "id": 6,
+    "prompt": "Choose the sentence that uses aim correctly as a verb.",
+    "choices": {
+      "A":"I aim to finish early today.",
+      "B":"My aim is to finish early today.",
+      "C":"The aim was very difficult."
+    },
+    "correct": "A"
+  },
+  {
+    "id": 7,
+    "prompt": "He didn’t want to ______ with his brother again.",
+    "choices": {"A":"argument","B":"argue","C":"apply"},
+    "correct": "B"
+  },
+  {
+    "id": 8,
+    "prompt": "They had an ______ last night, but it ended quickly.",
+    "choices": {"A":"argument","B":"argue","C":"aim"},
+    "correct": "A"
+  },
+  {
+    "id": 9,
+    "prompt": "She accepted his ______ after the mistake.",
+    "choices": {"A":"application","B":"appearance","C":"apology"},
+    "correct": "C"
+  },
+  {
+    "id": 10,
+    "prompt": "Choose the sentence that uses apply correctly (meaning: ask for a job/course).",
+    "choices": {
+      "A":"She applies make-up before work.",
+      "B":"He applied for the course last week.",
+      "C":"The nurse applied pressure to the wound."
+    },
+    "correct": "B"
+  }
+]
+
+IMPLEMENTATION NOTES:
+- Add a new route/screen “/module/2/quiz” (or your project’s equivalent naming).
+- Place a “Start End-of-Module Quiz” button at the end of Module 2 content that navigates to it.
+- Reuse the same quiz component used for Module 1 if possible (pass quizData + storage key as props).
+  Example: <ModuleQuiz moduleId="2" quizData={MODULE_2_QUIZ} bestScoreKey="module2QuizBestScore" />
+- Do not refactor unrelated code.
+
+DELIVERABLE:
+Return ONLY the minimal code diffs/changed files required to:
+1) add the Module 2 end-of-module quiz screen/component,
+2) connect the end of Module 2 flow to the quiz,
+3) implement submit → score + per-question review + retry,
+4) (optional) best score localStorage matching Module 1 behavior.

@@ -31,7 +31,7 @@ export function Layout({ children }: LayoutProps) {
 
       <footer className="border-t border-border py-8 mt-auto">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} FocusVocab. Keep learning.</p>
+          <p>© {new Date().getFullYear()} FocusVocab. Brought to you by Focus English Tutoring in Taiwan. Keep learning.</p>
         </div>
       </footer>
     </div>

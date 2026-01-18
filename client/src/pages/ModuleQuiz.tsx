@@ -2,87 +2,175 @@ import { useState, useEffect } from "react";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/Button";
 import { Card, CardContent } from "@/components/Card";
-import { useLocation } from "wouter";
+import { useLocation, useRoute } from "wouter";
 import { Check, X, ArrowRight, RotateCcw, Trophy } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-const QUIZ_DATA = [
-  {
-    "id": 1,
-    "prompt": "It took ______ to finish the homework.",
-    "choices": {"A":"aged","B":"age","C":"ages"},
-    "correct": "C"
-  },
-  {
-    "id": 2,
-    "prompt": "The school will ______ the results tomorrow.",
-    "choices": {"A":"announce","B":"announcement","C":"apologise"},
-    "correct": "A"
-  },
-  {
-    "id": 3,
-    "prompt": "The view from the mountain was ______.",
-    "choices": {"A":"amazed","B":"amazing","C":"amaze"},
-    "correct": "B"
-  },
-  {
-    "id": 4,
-    "prompt": "Choose the sentence that sounds correct.",
-    "choices": {
-      "A":"He gave an apologise to the teacher.",
-      "B":"He apologised for being late.",
-      "C":"The apologise was short."
+interface QuizQuestion {
+  id: number;
+  prompt: string;
+  choices: Record<string, string>;
+  correct: string;
+}
+
+const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
+  "1": [
+    {
+      "id": 1,
+      "prompt": "It took ______ to finish the homework.",
+      "choices": {"A":"aged","B":"age","C":"ages"},
+      "correct": "C"
     },
-    "correct": "B"
-  },
-  {
-    "id": 5,
-    "prompt": "What is your ______?",
-    "choices": {"A":"age","B":"ages","C":"aged"},
-    "correct": "A"
-  },
-  {
-    "id": 6,
-    "prompt": "Choose the sentence that sounds correct.",
-    "choices": {
-      "A":"The teacher announcement the test date.",
-      "B":"She will announcement tomorrow.",
-      "C":"We listened carefully to the announcement."
+    {
+      "id": 2,
+      "prompt": "The school will ______ the results tomorrow.",
+      "choices": {"A":"announce","B":"announcement","C":"apologise"},
+      "correct": "A"
     },
-    "correct": "C"
-  },
-  {
-    "id": 7,
-    "prompt": "The class is for children ______ 8 to 10.",
-    "choices": {"A":"age","B":"aged","C":"ages"},
-    "correct": "B"
-  },
-  {
-    "id": 8,
-    "prompt": "Her skills ______ everyone.",
-    "choices": {"A":"amazed","B":"amaze","C":"amazing"},
-    "correct": "B"
-  },
-  {
-    "id": 9,
-    "prompt": "Choose the sentence that sounds correct.",
-    "choices": {
-      "A":"What age do students take this test?",
-      "B":"This class is for children aged 8 to 10.",
-      "C":"People age differently under stress."
+    {
+      "id": 3,
+      "prompt": "The view from the mountain was ______.",
+      "choices": {"A":"amazed","B":"amazing","C":"amaze"},
+      "correct": "B"
     },
-    "correct": "C"
-  },
-  {
-    "id": 10,
-    "prompt": "I was ______ by the news.",
-    "choices": {"A":"amazed","B":"amazing","C":"amaze"},
-    "correct": "A"
-  }
-];
+    {
+      "id": 4,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {
+        "A":"He gave an apologise to the teacher.",
+        "B":"He apologised for being late.",
+        "C":"The apologise was short."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 5,
+      "prompt": "What is your ______?",
+      "choices": {"A":"age","B":"ages","C":"aged"},
+      "correct": "A"
+    },
+    {
+      "id": 6,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {
+        "A":"The teacher announcement the test date.",
+        "B":"She will announcement tomorrow.",
+        "C":"We listened carefully to the announcement."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 7,
+      "prompt": "The class is for children ______ 8 to 10.",
+      "choices": {"A":"age","B":"aged","C":"ages"},
+      "correct": "B"
+    },
+    {
+      "id": 8,
+      "prompt": "Her skills ______ everyone.",
+      "choices": {"A":"amazed","B":"amaze","C":"amazing"},
+      "correct": "B"
+    },
+    {
+      "id": 9,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {
+        "A":"What age do students take this test?",
+        "B":"This class is for children aged 8 to 10.",
+        "C":"People age differently under stress."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 10,
+      "prompt": "I was ______ by the news.",
+      "choices": {"A":"amazed","B":"amazing","C":"amaze"},
+      "correct": "A"
+    }
+  ],
+  "2": [
+    {
+      "id": 1,
+      "prompt": "She cares a lot about her ______.",
+      "choices": {"A":"appearance","B":"appear","C":"apology"},
+      "correct": "A"
+    },
+    {
+      "id": 2,
+      "prompt": "A rainbow may ______ after the rain.",
+      "choices": {"A":"appearance","B":"appear","C":"application"},
+      "correct": "B"
+    },
+    {
+      "id": 3,
+      "prompt": "I filled out an ______ online for the course.",
+      "choices": {"A":"application","B":"apply","C":"argument"},
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "prompt": "Choose the sentence that uses apply correctly (meaning: put something on).",
+      "choices": {
+        "A":"She applied for the course last week.",
+        "B":"He applied the program yesterday.",
+        "C":"The nurse applied pressure to the wound."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 5,
+      "prompt": "Their main ______ is to pass the test.",
+      "choices": {"A":"argument","B":"aim","C":"apology"},
+      "correct": "B"
+    },
+    {
+      "id": 6,
+      "prompt": "Choose the sentence that uses aim correctly as a verb.",
+      "choices": {
+        "A":"I aim to finish early today.",
+        "B":"My aim is to finish early today.",
+        "C":"The aim was very difficult."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 7,
+      "prompt": "He didn’t want to ______ with his brother again.",
+      "choices": {"A":"argument","B":"argue","C":"apply"},
+      "correct": "B"
+    },
+    {
+      "id": 8,
+      "prompt": "They had an ______ last night, but it ended quickly.",
+      "choices": {"A":"argument","B":"argue","C":"aim"},
+      "correct": "A"
+    },
+    {
+      "id": 9,
+      "prompt": "She accepted his ______ after the mistake.",
+      "choices": {"A":"application","B":"appearance","C":"apology"},
+      "correct": "C"
+    },
+    {
+      "id": 10,
+      "prompt": "Choose the sentence that uses apply correctly (meaning: ask for a job/course).",
+      "choices": {
+        "A":"She applies make-up before work.",
+        "B":"He applied for the course last week.",
+        "C":"The nurse applied pressure to the wound."
+      },
+      "correct": "B"
+    }
+  ]
+};
 
 export default function ModuleQuiz() {
+  const [, params] = useRoute("/unit/:unitId/module/:moduleId/quiz");
+  const moduleId = params?.moduleId || "1";
+  const quizData = QUIZ_DATA_BY_MODULE[moduleId] || QUIZ_DATA_BY_MODULE["1"];
+  const bestScoreKey = `module${moduleId}QuizBestScore`;
+
   const [, setLocation] = useLocation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
@@ -90,12 +178,12 @@ export default function ModuleQuiz() {
   const [bestScore, setBestScore] = useState<number | null>(null);
 
   useEffect(() => {
-    const saved = localStorage.getItem("module1QuizBestScore");
+    const saved = localStorage.getItem(bestScoreKey);
     if (saved) setBestScore(parseInt(saved));
-  }, []);
+  }, [bestScoreKey]);
 
-  const currentQuestion = QUIZ_DATA[currentIndex];
-  const totalQuestions = QUIZ_DATA.length;
+  const currentQuestion = quizData[currentIndex];
+  const totalQuestions = quizData.length;
   const isAllAnswered = Object.keys(answers).length === totalQuestions;
 
   const handleSelect = (choice: string) => {
@@ -105,10 +193,10 @@ export default function ModuleQuiz() {
 
   const handleSubmit = () => {
     setIsSubmitted(true);
-    const score = QUIZ_DATA.reduce((acc, q) => acc + (answers[q.id] === q.correct ? 1 : 0), 0);
+    const score = quizData.reduce((acc, q) => acc + (answers[q.id] === q.correct ? 1 : 0), 0);
     if (bestScore === null || score > bestScore) {
       setBestScore(score);
-      localStorage.setItem("module1QuizBestScore", score.toString());
+      localStorage.setItem(bestScoreKey, score.toString());
     }
     window.scrollTo(0, 0);
   };
@@ -121,7 +209,7 @@ export default function ModuleQuiz() {
   };
 
   if (isSubmitted) {
-    const score = QUIZ_DATA.reduce((acc, q) => acc + (answers[q.id] === q.correct ? 1 : 0), 0);
+    const score = quizData.reduce((acc, q) => acc + (answers[q.id] === q.correct ? 1 : 0), 0);
     return (
       <Layout>
         <div className="max-w-2xl mx-auto space-y-8 py-8">
@@ -141,7 +229,7 @@ export default function ModuleQuiz() {
             
             <CardContent className="p-8 space-y-8">
               <div className="space-y-6">
-                {QUIZ_DATA.map((q, idx) => {
+                {quizData.map((q, idx) => {
                   const isCorrect = answers[q.id] === q.correct;
                   return (
                     <div key={q.id} className={cn(
@@ -202,7 +290,7 @@ export default function ModuleQuiz() {
       <div className="max-w-2xl mx-auto space-y-8 py-8">
         <div className="flex items-center justify-between gap-4">
           <div className="space-y-1">
-            <h2 className="text-sm font-bold text-muted-foreground uppercase tracking-widest">End of Module Quiz</h2>
+            <h2 className="text-sm font-bold text-muted-foreground uppercase tracking-widest">End of Module {moduleId} Quiz</h2>
             <p className="text-xl font-bold">Question {currentIndex + 1} of {totalQuestions}</p>
           </div>
           <div className="w-32 h-2 bg-muted rounded-full overflow-hidden">
