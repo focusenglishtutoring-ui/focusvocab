@@ -16,6 +16,7 @@ export function Layout({ children }: LayoutProps) {
               <img src={logoImg} alt="FocusVocab Logo" className="w-full h-full object-contain" />
             </div>
             <span className="font-bold text-lg tracking-tight">FocusVocab</span>
+            <span className="text-xs italic text-muted-foreground ml-1 font-normal">powered by Focus English Tutoring in Taiwan</span>
           </Link>
           <nav>
             {/* Nav items could go here */}
