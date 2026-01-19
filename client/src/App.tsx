@@ -9,7 +9,6 @@ import Unit from "@/pages/Unit";
 import Module from "@/pages/Module";
 import ModuleQuiz from "@/pages/ModuleQuiz";
 import MidUnitTest from "@/pages/MidUnitTest";
-import NotFound from "@/pages/not-found";
 
 function Router() {
   return (
