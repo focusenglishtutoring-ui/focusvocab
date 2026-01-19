@@ -94,7 +94,7 @@ export default function Home() {
           <Card className="bg-gradient-to-br from-card to-secondary/50 border-2 border-border/50">
             <CardContent className="p-8 flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="space-y-2 text-center md:text-left">
-                <p className="text-sm font-semibold text-primary uppercase tracking-wider">Current Unit</p>
+                <p className="text-sm font-semibold text-primary uppercase tracking-wider">Unit 1</p>
                 <h3 className="text-2xl font-bold">{unit.title}</h3>
                 <p className="text-muted-foreground">{unit.modules.length} Modules Available</p>
               </div>

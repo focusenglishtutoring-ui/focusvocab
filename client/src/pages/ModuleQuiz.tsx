@@ -166,62 +166,62 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
   "3": [
     {
       "id": 1,
-      "prompt": "What is an *air conditioner*?",
-      "choices": {"A":"the machine that makes the air cool","B":"a place where planes land","C":"a kind of phone"},
-      "correct": "A"
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {"A":"The twins are very alive.","B":"The twins are very all right.","C":"The twins are very alike."},
+      "correct": "C"
     },
     {
       "id": 2,
-      "prompt": "What is the *air force*?",
-      "choices": {"A":"the police on the street","B":"the army that uses planes","C":"a place where planes land"},
+      "prompt": "We waited at the ______ for three hours before the flight.",
+      "choices": {"A":"airline","B":"airport","C":"air force"},
       "correct": "B"
     },
     {
       "id": 3,
-      "prompt": "What is an *airline*?",
-      "choices": {"A":"a company that flies people","B":"a place to wait for planes","C":"a kind of map"},
+      "prompt": "My ______ went off loudly this morning.",
+      "choices": {"A":"alarm","B":"album","C":"airline"},
       "correct": "A"
     },
     {
       "id": 4,
-      "prompt": "What is an *airport*?",
-      "choices": {"A":"a place for planes","B":"a place to buy tickets","C":"a kind of bus"},
-      "correct": "A"
+      "prompt": "We turned on the ______ to cool the whole building.",
+      "choices": {"A":"air conditioner","B":"air conditioning","C":"alarm"},
+      "correct": "B"
     },
     {
       "id": 5,
-      "prompt": "What is an *alarm*?",
-      "choices": {"A":"a quiet message","B":"a warning or waking sound","C":"a school subject"},
-      "correct": "B"
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {"A":"This airport flies to Japan.","B":"This air force flies to Japan.","C":"This airline flies to Japan."},
+      "correct": "C"
     },
     {
       "id": 6,
-      "prompt": "What does *alarm* mean (when used as a verb)?",
-      "choices": {"A":"to make someone laugh","B":"to make someone hungry","C":"to make someone feel scared"},
-      "correct": "C"
-    },
-    {
-      "id": 7,
-      "prompt": "What is an *album*?",
-      "choices": {"A":"a collection of photos or music","B":"a type of ticket","C":"a kind of jacket"},
+      "prompt": "The ______ is the machine that cools the room.",
+      "choices": {"A":"air conditioner","B":"air conditioning","C":"airport"},
       "correct": "A"
     },
     {
-      "id": 8,
-      "prompt": "What does *alike* mean?",
-      "choices": {"A":"very different","B":"very similar","C":"very loud"},
+      "id": 7,
+      "prompt": "He joined the ______ after finishing school.",
+      "choices": {"A":"airline","B":"air force","C":"airport"},
       "correct": "B"
     },
     {
-      "id": 9,
-      "prompt": "What does *alive* mean?",
-      "choices": {"A":"broken","B":"asleep","C":"living"},
+      "id": 8,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {"A":"Her new alarm is very popular.","B":"Her new airport is very popular.","C":"Her new album is very popular."},
       "correct": "C"
     },
     {
+      "id": 9,
+      "prompt": "Loud noises can ______ small children.",
+      "choices": {"A":"alarm","B":"album","C":"airport"},
+      "correct": "A"
+    },
+    {
       "id": 10,
-      "prompt": "What does *all right / alright* mean?",
-      "choices": {"A":"very bad","B":"very hungry","C":"OK or fine"},
+      "prompt": "Is everything ______?",
+      "choices": {"A":"alive","B":"alike","C":"all right"},
       "correct": "C"
     }
   ]
