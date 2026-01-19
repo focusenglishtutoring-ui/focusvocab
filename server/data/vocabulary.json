@@ -1016,6 +1016,232 @@
           ]
         }
       ]
+    },
+    {
+      "order": 5,
+      "title": "Module 5",
+      "entries": [
+        {
+          "headword": "among / amongst",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "prep.",
+              "zh": "在…之中",
+              "definition": "In the middle of a group of people or things",
+              "note": "Among and amongst mean the same thing. Among is more common and used everywhere. Amongst is used more in British English.",
+              "examples": [
+                { "text": "She was sitting among her friends.", "tag": null },
+                { "text": "The house is hidden amongst the trees.", "tag": null },
+                { "text": "He felt nervous among so many people.", "tag": null }
+              ],
+              "check": {
+                "question": "What does among / amongst mean?",
+                "choices": ["far away from others", "in the middle of a group", "on top of something"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "amount",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n./v.",
+              "zh": "數量",
+              "definition": "How much of something there is",
+              "note": null,
+              "examples": [
+                { "text": "A large amount of homework was given.", "tag": "n." },
+                { "text": "The amount of rain surprised us.", "tag": "n." },
+                { "text": "The bills amounted to a lot of money.", "tag": "v., past simple" }
+              ],
+              "check": {
+                "question": "What does amount talk about?",
+                "choices": ["how fast something moves", "how loud something is", "how much there is"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "ancient",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adj.",
+              "zh": "古老的",
+              "definition": "Very old, from a long time ago",
+              "note": null,
+              "examples": [
+                { "text": "They studied ancient history.", "tag": null },
+                { "text": "This city has ancient buildings.", "tag": null },
+                { "text": "Have you seen ancient art?", "tag": null }
+              ],
+              "check": {
+                "question": "What does ancient mean?",
+                "choices": ["very old", "very new", "very clean"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "ankle",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "腳踝",
+              "definition": "The part of the leg just above the foot",
+              "note": null,
+              "examples": [
+                { "text": "She hurt her ankle playing football.", "tag": null },
+                { "text": "My ankle is still sore.", "tag": null },
+                { "text": "Did you twist your ankle?", "tag": null }
+              ],
+              "check": {
+                "question": "Where is your ankle?",
+                "choices": ["on your hand", "on your shoulder", "between your foot and leg"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "anniversary",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "週年紀念日",
+              "definition": "A date that remembers a special event from the past",
+              "note": null,
+              "examples": [
+                { "text": "Today is their wedding anniversary.", "tag": null },
+                { "text": "We celebrated the school’s anniversary.", "tag": null },
+                { "text": "When is your anniversary?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an anniversary?",
+                "choices": ["a future plan", "a special date from the past", "a daily habit"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "announce",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "宣布",
+              "definition": "To tell people something important",
+              "note": null,
+              "examples": [
+                { "text": "The teacher announced the test date.", "tag": "past simple" },
+                { "text": "They will announce the winner today.", "tag": null },
+                { "text": "Did she announce the news?", "tag": null }
+              ],
+              "check": {
+                "question": "What does announce mean?",
+                "choices": ["to keep something secret", "to whisper quietly", "to tell people something important"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "announcement",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "公告；宣布",
+              "definition": "Something important that is told to people",
+              "note": null,
+              "examples": [
+                { "text": "The announcement was short.", "tag": null },
+                { "text": "We listened to the school announcement.", "tag": null },
+                { "text": "Did you hear the announcement?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an announcement?",
+                "choices": ["a private message", "a long story", "important information told to people"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "annoy",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "使煩惱",
+              "definition": "To make someone feel a little upset",
+              "note": null,
+              "examples": [
+                { "text": "The noise annoyed me.", "tag": "past simple" },
+                { "text": "He annoys his sister sometimes.", "tag": "present simple –s" },
+                { "text": "Does it annoy you when people are late?", "tag": null }
+              ],
+              "check": {
+                "question": "What does annoy mean?",
+                "choices": ["to make someone upset", "to make someone rich", "to make someone sleepy"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "anxious",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adj.",
+              "zh": "焦慮的",
+              "definition": "Feeling worried or nervous about something",
+              "note": null,
+              "examples": [
+                { "text": "She felt anxious before the test.", "tag": null },
+                { "text": "He is anxious about the results.", "tag": null },
+                { "text": "Are you anxious about tomorrow?", "tag": null }
+              ],
+              "check": {
+                "question": "What does anxious mean?",
+                "choices": ["very excited", "very tired", "worried or nervous"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "anybody",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "pron.",
+              "zh": "任何人",
+              "definition": "Any person at all, when it does not matter who",
+              "note": null,
+              "examples": [
+                { "text": "Anybody can join the club.", "tag": null },
+                { "text": "Did anybody call me?", "tag": null },
+                { "text": "Is anybody here?", "tag": null }
+              ],
+              "check": {
+                "question": "When do we use anybody?",
+                "choices": ["when we talk about one special person", "when it does not matter who", "when we talk about a place"],
+                "answer": "B"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -294,6 +294,76 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       "choices": {"A":"altogether","B":"almost","C":"alone"},
       "correct": "B"
     }
+  ],
+  "5": [
+    {
+      "id": 1,
+      "prompt": "The ______ of homework surprised the students.",
+      "choices": {"A":"ankle","B":"anniversary","C":"amount"},
+      "correct": "C"
+    },
+    {
+      "id": 2,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {
+        "A":"Loud music can announce the neighbors.",
+        "B":"Loud music can annoy the neighbors.",
+        "C":"Loud music can anxious the neighbors."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 3,
+      "prompt": "She felt nervous ______ so many people.",
+      "choices": {"A":"among","B":"amount","C":"anybody"},
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "prompt": "Today is their wedding ______.",
+      "choices": {"A":"ancient","B":"anniversary","C":"announcement"},
+      "correct": "B"
+    },
+    {
+      "id": 5,
+      "prompt": "She twisted her ______ while playing football.",
+      "choices": {"A":"ankle","B":"ancient","C":"anxious"},
+      "correct": "A"
+    },
+    {
+      "id": 6,
+      "prompt": "Choose the sentence that uses *announce* correctly.",
+      "choices": {
+        "A":"The teacher will announcement the winner today.",
+        "B":"The teacher will announce the winner today.",
+        "C":"The teacher will announcer the winner today."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 7,
+      "prompt": "We listened carefully to the school ______.",
+      "choices": {"A":"announce","B":"anniversary","C":"announcement"},
+      "correct": "C"
+    },
+    {
+      "id": 8,
+      "prompt": "They studied ______ history in class.",
+      "choices": {"A":"anxious","B":"annoyed","C":"ancient"},
+      "correct": "C"
+    },
+    {
+      "id": 9,
+      "prompt": "She felt ______ before the test started.",
+      "choices": {"A":"annoyed","B":"anxious","C":"ancient"},
+      "correct": "B"
+    },
+    {
+      "id": 10,
+      "prompt": "______ can join the club.",
+      "choices": {"A":"Anxious","B":"Anniversary","C":"Anybody"},
+      "correct": "C"
+    }
   ]
 };
 
