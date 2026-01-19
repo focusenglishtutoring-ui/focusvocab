@@ -1,0 +1,243 @@
+You are building a web-based “Mid-Unit Test (Modules 1–5)” page in my English vocabulary app. This test appears immediately after Module 5.
+
+==================================================
+CORE GOAL
+==================================================
+Create a Mid-Unit Test that behaves exactly like my existing End-of-Module quizzes:
+
+- Students answer ALL questions first
+- NO correct answers are shown while working
+- Correct answers + score are revealed ONLY after clicking “Finish Test”
+- Students can retry the test
+
+This is a MEANING-recognition test, not spelling or grammar.
+
+==================================================
+INPUT METHOD (LOCKED)
+==================================================
+- Students answer using DROPDOWNS (select inputs), NOT typing.
+- Dropdown options come ONLY from the Word Bank (exact strings).
+- No tense changes, no inflections, no spelling variation.
+
+==================================================
+WORD BANK DISPLAY
+==================================================
+- Display the Word Bank at the TOP of the page.
+- Put it inside a rectangular box with:
+  - border
+  - padding
+  - rounded corners
+  - light background
+- Maintain the EXACT order below (do NOT reorder or alphabetize).
+
+WORD BANK VISUAL STATE:
+- UNUSED word → normal text
+- USED word → STRIKETHROUGH text (like a student crossing it out with a pencil)
+- Strikethrough updates LIVE when answers change.
+
+==================================================
+DROPDOWN BEHAVIOR
+==================================================
+- Each question has a dropdown containing ALL Word Bank items.
+- When a word is selected for one question:
+  - That word becomes DISABLED in all other dropdowns
+  - That word shows STRIKETHROUGH in the Word Bank
+- The selected word remains selectable for its own question (so students can change answers).
+
+CHANGING ANSWERS:
+- Students may change answers freely before finishing.
+- When an answer is changed:
+  - The old word loses strikethrough and becomes available again
+  - The new word gains strikethrough and is disabled elsewhere
+
+OPTIONAL (RECOMMENDED):
+- Add a small “Clear (×)” button next to each question to remove the selection.
+
+==================================================
+FINISH / REVEAL BEHAVIOR
+==================================================
+- “Finish Test” button:
+  - Disabled until ALL questions have an answer
+- On click:
+  - Lock all dropdowns
+  - Reveal score (e.g., “Score: 42 / 50”)
+  - Reveal correct answer per question
+  - Mark each question with ✅ or ❌
+- Show “Retry” button:
+  - Clears all answers
+  - Removes all strikethroughs
+  - Restores full word availability
+
+==================================================
+IMPLEMENTATION NOTES
+==================================================
+- Reuse existing quiz logic/components if possible.
+- Otherwise create: MidUnitTest.jsx (or .tsx).
+- Keep styling consistent with the app.
+- Mobile-friendly (Word Bank wraps into columns).
+- Local state only (no backend).
+- Absolutely NO answer leakage before Finish.
+
+==================================================
+DATA (USE EXACTLY AS PROVIDED)
+==================================================
+
+--------------------
+WORD BANK (ORDER LOCKED)
+--------------------
+a.m. (adv.)
+age (n.)
+age (v.)
+aged (adj.)
+ages (n.)
+air conditioning / air conditioner (n.)
+air force (n.)
+airline (n.)
+airport (n.)
+aim (n.)
+aim (v.)
+alarm (n.)
+alarm (v.)
+alike (adj./adv.)
+alive (adj.)
+all right / alright (adj./adv.)
+allow (v.)
+almost (adv.)
+alone (adj./adv.)
+aloud (adv.)
+alphabet (n.)
+although (conj.)
+altogether (adv.)
+ambition (n.)
+ambulance (n.)
+amaze (v.)
+amazed (adj.)
+amazing (adj.)
+among / amongst (prep.)
+amount (n./v.)
+ancient (adj.)
+ankle (n.)
+anniversary (n.)
+announce (v.)
+announcement (n.)
+annoy (v.)
+anxious (adj.)
+anybody (pron.)
+apologise (v.)
+apology (n.)
+appear (v.)
+appearance (n.)
+apply (v.) – put on / use
+apply (v.) – request / form
+application (n.)
+argue (v.)
+argument (n.)
+album (n.)
+
+--------------------
+QUESTIONS (ORDER LOCKED)
+--------------------
+1. The house is hidden __________ the trees.
+2. I feel very __________ before an important test.
+3. The teacher makes an important __________ at the start of class.
+4. Please read the sentence __________ so everyone can hear you.
+5. The museum shows __________ art from long ago.
+6. We wait at the __________ before boarding the plane.
+7. I __________ for the course online.
+8. The twins look very __________ in this photo.
+9. The teacher does not __________ phones in class.
+10. Her wedding __________ is next weekend.
+11. I don’t see him for __________ when he travels abroad.
+12. The class starts at 8 __________.
+13. Loud noises __________ small children.
+14. My main __________ is to improve my English.
+15. The nurse __________ pressure to the wound.
+16. The animal is still __________ after the accident.
+17. This music __________ is very popular.
+18. The class is for children __________ 8 to 10.
+19. We turn on the __________ to cool the room.
+20. The teacher is __________ by the result.
+21. The soldiers join the __________ after school.
+22. __________ can join the club.
+23. They have an __________ about the answer.
+24. I hurt my __________ while playing football.
+25. She feels __________ when waiting for the results.
+26. The answer is __________ — everyone agrees.
+27. I __________ to finish my homework early.
+28. A rainbow __________ after the rain stops.
+29. Please write your name using the English __________.
+30. The school will __________ the test results today.
+31. The driver calls an __________ after the accident.
+32. He does not want to __________ with his brother.
+33. I give her an __________ for being late.
+34. The result __________ everyone in the room.
+35. She stays at home __________ in the evening.
+36. The course __________ to help students.
+37. The teacher is surprised by the __________ of homework.
+38. I describe the __________ of the building.
+39. The music is __________ — everyone loves it.
+40. The __________ wakes me at six every morning.
+41. We choose a cheap __________ for our holiday.
+42. I feel __________ when I understand the lesson.
+43. The test asks about your __________.
+44. The company will __________ new rules today.
+45. I __________ for a new job this year.
+46. The students sit __________ their friends.
+47. She has an __________ memory.
+48. The class __________ at helping students.
+49. He works in the __________.
+50. The sound makes people feel __________.
+
+--------------------
+ANSWER KEY (DO NOT SHOW UNTIL FINISH)
+--------------------
+1. among / amongst
+2. anxious
+3. announcement
+4. aloud
+5. ancient
+6. airport
+7. apply (v.) – request / form
+8. alike
+9. allow
+10. anniversary
+11. ages
+12. a.m.
+13. alarm (v.)
+14. ambition
+15. apply (v.) – put on / use
+16. alive
+17. album
+18. aged
+19. air conditioning / air conditioner
+20. amazed
+21. air force
+22. anybody
+23. argument
+24. ankle
+25. anxious
+26. all right / alright
+27. aim (v.)
+28. appear
+29. alphabet
+30. announce
+31. ambulance
+32. argue
+33. apology
+34. amaze
+35. alone
+36. aim (n.)
+37. amount (n./v.)
+38. appearance
+39. amazing
+40. alarm (n.)
+41. airline
+42. amazed
+43. age (n.)
+44. announce
+45. apply (v.) – request / form
+46. among / amongst
+47. amazing
+48. aim (v.)
+49. air force
+50. anxious
