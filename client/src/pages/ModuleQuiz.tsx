@@ -496,6 +496,76 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       "choices": {"A":"area","B":"architect","C":"army"},
       "correct": "C"
     }
+  ],
+  "8": [
+    {
+      "id": 1,
+      "prompt": "Please pay ______ in class.",
+      "choices": {"A":"assistant","B":"attention","C":"article"},
+      "correct": "B"
+    },
+    {
+      "id": 2,
+      "prompt": "The children sat ______ the table.",
+      "choices": {"A":"around","B":"arrive","C":"attend"},
+      "correct": "A"
+    },
+    {
+      "id": 3,
+      "prompt": "She works as a shop ______.",
+      "choices": {"A":"attention","B":"article","C":"assistant"},
+      "correct": "C"
+    },
+    {
+      "id": 4,
+      "prompt": "We need to ______ the chairs before class starts.",
+      "choices": {"A":"arrange","B":"attend","C":"arrive"},
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "prompt": "I read an interesting ______ about animals.",
+      "choices": {"A":"assistant","B":"asleep","C":"article"},
+      "correct": "C"
+    },
+    {
+      "id": 6,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {
+        "A":"He fell artistic quickly.",
+        "B":"He fell attend quickly.",
+        "C":"He fell asleep quickly."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 7,
+      "prompt": "The bus will ______ at eight o’clock.",
+      "choices": {"A":"attend","B":"arrive","C":"arrange"},
+      "correct": "B"
+    },
+    {
+      "id": 8,
+      "prompt": "She has a very ______ style of drawing.",
+      "choices": {"A":"artistic","B":"asleep","C":"assistant"},
+      "correct": "A"
+    },
+    {
+      "id": 9,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {
+        "A":"We talked about the seating arrange.",
+        "B":"We talked about the seating arrive.",
+        "C":"We talked about the seating arrangement."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 10,
+      "prompt": "Will you ______ the meeting tomorrow?",
+      "choices": {"A":"arrive","B":"arrange","C":"attend"},
+      "correct": "C"
+    }
   ]
 };
 

@@ -1689,6 +1689,232 @@
           ]
         }
       ]
+    },
+    {
+      "order": 8,
+      "title": "Module 8",
+      "entries": [
+        {
+          "headword": "around",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "prep./adv.",
+              "zh": "在…周圍；大約",
+              "definition": "Near something, in a circle, or about a number or time",
+              "note": null,
+              "examples": [
+                { "text": "The children sat around the table.", "tag": "prep." },
+                { "text": "There are shops around the school.", "tag": "prep." },
+                { "text": "There were around 20 students in the class.", "tag": "adv." }
+              ],
+              "check": {
+                "question": "What does around help show here?",
+                "choices": ["near or about", "far away", "exactly the same"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "arrange",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "安排",
+              "definition": "To plan something or put things in order",
+              "note": null,
+              "examples": [
+                { "text": "She arranges the chairs before class.", "tag": "present simple –s" },
+                { "text": "We arranged a meeting yesterday.", "tag": "past simple" },
+                { "text": "Did you arrange the trip?", "tag": null }
+              ],
+              "check": {
+                "question": "What does arrange mean?",
+                "choices": ["to forget", "to plan or put in order", "to break something"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "arrangement",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "安排",
+              "definition": "A plan that has been made",
+              "note": null,
+              "examples": [
+                { "text": "The arrangement was simple.", "tag": null },
+                { "text": "We talked about the seating arrangement.", "tag": null },
+                { "text": "Is the arrangement finished?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an arrangement?",
+                "choices": ["a problem", "a rule", "a plan"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "arrive",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "到達",
+              "definition": "To get to a place",
+              "note": null,
+              "examples": [
+                { "text": "The bus arrives at eight.", "tag": "present simple –s" },
+                { "text": "She arrived home late.", "tag": "past simple" },
+                { "text": "When did you arrive?", "tag": null }
+              ],
+              "check": {
+                "question": "What does arrive mean?",
+                "choices": ["to leave a place", "to get to a place", "to wait"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "article",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "文章",
+              "definition": "A piece of writing in a newspaper, magazine, or online",
+              "note": null,
+              "examples": [
+                { "text": "I read an article about animals.", "tag": null },
+                { "text": "This article is very short.", "tag": null },
+                { "text": "Did you finish the article?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an article?",
+                "choices": ["a picture", "a video", "a piece of writing"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "artistic",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adj.",
+              "zh": "有藝術感的",
+              "definition": "Showing ideas in art, such as drawing, painting, or music",
+              "note": null,
+              "examples": [
+                { "text": "She has an artistic style of drawing.", "tag": null },
+                { "text": "The room looks very artistic.", "tag": null },
+                { "text": "Are you artistic?", "tag": null }
+              ],
+              "check": {
+                "question": "What does artistic describe?",
+                "choices": ["something very fast", "something related to art", "something very loud"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "asleep",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adj.",
+              "zh": "睡著的",
+              "definition": "Sleeping",
+              "note": null,
+              "examples": [
+                { "text": "The baby is asleep.", "tag": null },
+                { "text": "He fell asleep quickly.", "tag": null },
+                { "text": "Are the children asleep?", "tag": null }
+              ],
+              "check": {
+                "question": "What does asleep mean?",
+                "choices": ["awake", "tired", "sleeping"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "assistant",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "助手",
+              "definition": "A person who helps someone at work",
+              "note": null,
+              "examples": [
+                { "text": "The teacher has an assistant.", "tag": null },
+                { "text": "She works as a shop assistant.", "tag": null },
+                { "text": "Is the assistant here today?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an assistant?",
+                "choices": ["a customer", "a helper", "a boss"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "attend",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "參加；出席",
+              "definition": "To go to an event, class, or place",
+              "note": null,
+              "examples": [
+                { "text": "He attends this school.", "tag": "present simple –s" },
+                { "text": "She attended the meeting.", "tag": "past simple" },
+                { "text": "Will you attend the class?", "tag": null }
+              ],
+              "check": {
+                "question": "What does attend mean?",
+                "choices": ["to stay at home", "to watch on TV", "to go to something"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "attention",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "注意",
+              "definition": "Listening or looking carefully",
+              "note": null,
+              "examples": [
+                { "text": "Please pay attention in class.", "tag": null },
+                { "text": "The teacher wants your attention.", "tag": null },
+                { "text": "Are you giving this your full attention?", "tag": null }
+              ],
+              "check": {
+                "question": "What is attention?",
+                "choices": ["sleeping", "listening or looking carefully", "running fast"],
+                "answer": "B"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
