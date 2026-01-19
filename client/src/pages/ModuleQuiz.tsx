@@ -364,6 +364,72 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       "choices": {"A":"Anxious","B":"Anniversary","C":"Anybody"},
       "correct": "C"
     }
+  ],
+  "6": [
+    {
+      "id": 1,
+      "prompt": "That ______ has many families living inside.",
+      "choices": {"A":"apartment","B":"app","C":"apartment building"},
+      "correct": "C"
+    },
+    {
+      "id": 2,
+      "prompt": "I don’t live there ______.",
+      "choices": {"A":"anywhere","B":"anymore","C":"anyway"},
+      "correct": "B"
+    },
+    {
+      "id": 3,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {
+        "A":"Everyone came apart Tom.",
+        "B":"Everyone came apart from Tom.",
+        "C":"Everyone came apart with Tom."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 4,
+      "prompt": "I can’t find my keys ______.",
+      "choices": {"A":"apart","B":"anyway","C":"anywhere"},
+      "correct": "C"
+    },
+    {
+      "id": 5,
+      "prompt": "You can ask me ______ if you need help.",
+      "choices": {"A":"anyone","B":"anywhere","C":"anything"},
+      "correct": "C"
+    },
+    {
+      "id": 6,
+      "prompt": "The two houses are far ______.",
+      "choices": {"A":"apart","B":"anywhere","C":"apart from"},
+      "correct": "A"
+    },
+    {
+      "id": 7,
+      "prompt": "I use this ______ every day on my phone.",
+      "choices": {"A":"apartment","B":"app","C":"apartment building"},
+      "correct": "B"
+    },
+    {
+      "id": 8,
+      "prompt": "______ can answer this question.",
+      "choices": {"A":"Anyone","B":"Anything","C":"Anywhere"},
+      "correct": "A"
+    },
+    {
+      "id": 9,
+      "prompt": "It was raining, but we went out ______.",
+      "choices": {"A":"anywhere","B":"apart","C":"anyway"},
+      "correct": "C"
+    },
+    {
+      "id": 10,
+      "prompt": "She lives in an ______ on the third floor.",
+      "choices": {"A":"apartment building","B":"apartment","C":"app"},
+      "correct": "B"
+    }
   ]
 };
 

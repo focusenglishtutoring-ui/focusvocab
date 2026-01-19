@@ -1242,6 +1242,232 @@
           ]
         }
       ]
+    },
+    {
+      "order": 6,
+      "title": "Module 6",
+      "entries": [
+        {
+          "headword": "anymore",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adv.",
+              "zh": "不再",
+              "definition": "Not now, but it was true in the past",
+              "note": null,
+              "examples": [
+                { "text": "I don’t play that game anymore.", "tag": null },
+                { "text": "She doesn’t live here anymore.", "tag": null },
+                { "text": "Do you watch cartoons anymore?", "tag": null }
+              ],
+              "check": {
+                "question": "What does anymore mean?",
+                "choices": ["not now, but in the past", "very often", "in the future"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "anyone",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "pron.",
+              "zh": "任何人",
+              "definition": "Any person at all",
+              "note": "Anyone means the same as anybody.",
+              "examples": [
+                { "text": "Anyone can answer this question.", "tag": null },
+                { "text": "Did anyone see my bag?", "tag": null },
+                { "text": "Is anyone ready to start?", "tag": null }
+              ],
+              "check": {
+                "question": "What does anyone mean?",
+                "choices": ["any person", "one special person", "a group of people"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "anything",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "pron.",
+              "zh": "任何事物",
+              "definition": "Any thing at all",
+              "note": null,
+              "examples": [
+                { "text": "You can ask me anything.", "tag": null },
+                { "text": "Did you eat anything today?", "tag": null },
+                { "text": "Is there anything I can help with?", "tag": null }
+              ],
+              "check": {
+                "question": "What does anything mean?",
+                "choices": ["one special thing", "something expensive", "any thing at all"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "anyway",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adv.",
+              "zh": "不管怎樣；反正",
+              "definition": "Used when something happens even though there is a problem, or when changing the topic",
+              "note": null,
+              "examples": [
+                { "text": "It was raining, but we went out anyway.", "tag": null },
+                { "text": "I didn’t like the movie. Anyway, let’s talk about school.", "tag": null },
+                { "text": "It’s raining, but are you coming anyway?", "tag": null }
+              ],
+              "check": {
+                "question": "What does anyway do here?",
+                "choices": ["talks about the future", "shows something happens despite a problem", "gives an order"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "anywhere",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adv.",
+              "zh": "任何地方",
+              "definition": "In any place",
+              "note": null,
+              "examples": [
+                { "text": "You can sit anywhere.", "tag": null },
+                { "text": "I can’t find my keys anywhere.", "tag": null },
+                { "text": "Did you go anywhere yesterday?", "tag": null }
+              ],
+              "check": {
+                "question": "What does anywhere mean?",
+                "choices": ["in one place only", "very far away", "in any place"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "apart",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adv.",
+              "zh": "分開地",
+              "definition": "Separated, not together",
+              "note": null,
+              "examples": [
+                { "text": "The two houses are far apart.", "tag": null },
+                { "text": "Please keep these papers apart.", "tag": null },
+                { "text": "They live apart now.", "tag": null }
+              ],
+              "check": {
+                "question": "What does apart mean?",
+                "choices": ["together", "separated", "noisy"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "apart from",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "prep. phr.",
+              "zh": "除了",
+              "definition": "Used when one thing is not part of the group, or when one more thing is added",
+              "note": null,
+              "examples": [
+                { "text": "Everyone came apart from Tom.", "tag": "Tom did not come" },
+                { "text": "Apart from English, she studies math.", "tag": "She studies English and math" },
+                { "text": "Apart from the rain, the trip was great.", "tag": "The trip was great, but the rain was bad" }
+              ],
+              "check": {
+                "question": "In the sentence “Everyone came apart from Tom,” what does it tell you?",
+                "choices": ["Tom came late", "Tom came too", "Tom did not come"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "apartment",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "公寓",
+              "definition": "One home inside a big building where many people live",
+              "note": null,
+              "examples": [
+                { "text": "She lives in an apartment.", "tag": null },
+                { "text": "Their apartment is on the third floor.", "tag": null },
+                { "text": "Do you rent an apartment?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an apartment?",
+                "choices": ["a whole building", "one home in a big building", "a hotel room"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "apartment building",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "公寓大樓",
+              "definition": "A big building with many apartments inside",
+              "note": null,
+              "examples": [
+                { "text": "That apartment building is very tall.", "tag": null },
+                { "text": "Many families live in the apartment building.", "tag": null },
+                { "text": "Is this an apartment building?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an apartment building?",
+                "choices": ["one small home", "a building with many apartments", "a shopping center"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "app",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "應用程式",
+              "definition": "A program you use on a phone or computer",
+              "note": null,
+              "examples": [
+                { "text": "I use this app every day.", "tag": null },
+                { "text": "She downloaded a new app.", "tag": null },
+                { "text": "Which app do you like most?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an app?",
+                "choices": ["a paper form", "a kind of website", "a program on a phone or computer"],
+                "answer": "C"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
