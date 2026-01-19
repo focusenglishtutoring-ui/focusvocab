@@ -482,10 +482,17 @@ export default function ModuleQuiz() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button size="lg" onClick={handleRetry} className="flex-1 rounded-full h-14 text-lg">
-                  <RotateCcw className="mr-2 w-5 h-5" />
-                  Retry Quiz
-                </Button>
+                {moduleId === "5" ? (
+                  <Button size="lg" onClick={() => setLocation("/mid-unit-test-1")} className="flex-1 rounded-full h-14 text-lg">
+                    <Check className="mr-2 w-5 h-5" />
+                    Finish & Start Mid-Unit Test
+                  </Button>
+                ) : (
+                  <Button size="lg" onClick={handleRetry} className="flex-1 rounded-full h-14 text-lg">
+                    <RotateCcw className="mr-2 w-5 h-5" />
+                    Retry Quiz
+                  </Button>
+                )}
                 <Button size="lg" variant="outline" onClick={() => setLocation("/unit")} className="flex-1 rounded-full h-14 text-lg">
                   Back to Unit
                 </Button>

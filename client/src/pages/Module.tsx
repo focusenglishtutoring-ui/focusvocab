@@ -124,17 +124,10 @@ export default function Module() {
                   <Home className="mr-2 w-5 h-5" />
                   Back to Unit
                 </Button>
-                {params?.moduleId === "5" ? (
-                  <Button size="lg" onClick={() => setLocation(`/mid-unit-test-1`)}>
-                    <Trophy className="mr-2 w-5 h-5" />
-                    Start Mid-Unit Test (1-5)
-                  </Button>
-                ) : (
-                  <Button size="lg" onClick={() => setLocation(`/unit/${unit.unit_id}/module/${params?.moduleId}/quiz`)}>
-                    <Trophy className="mr-2 w-5 h-5" />
-                    Start End-of-Module Quiz
-                  </Button>
-                )}
+                <Button size="lg" onClick={() => setLocation(`/unit/${unit.unit_id}/module/${params?.moduleId}/quiz`)}>
+                  <Trophy className="mr-2 w-5 h-5" />
+                  Start End-of-Module Quiz
+                </Button>
               </div>
             </motion.div>
           )}
