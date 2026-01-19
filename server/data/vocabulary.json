@@ -790,6 +790,232 @@
           ]
         }
       ]
+    },
+    {
+      "order": 4,
+      "title": "Module 4",
+      "entries": [
+        {
+          "headword": "allow",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "允許",
+              "definition": "To say that something is OK to do",
+              "note": null,
+              "examples": [
+                { "text": "The teacher allows phones in class.", "tag": "present simple –s" },
+                { "text": "They allowed us to leave early.", "tag": "past simple" },
+                { "text": "Does your school allow snacks?", "tag": null }
+              ],
+              "check": {
+                "question": "What does allow mean?",
+                "choices": ["to say something is OK", "to stop something", "to forget something"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "almost",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adv.",
+              "zh": "幾乎",
+              "definition": "Very close to happening, but it hasn’t happened yet",
+              "note": null,
+              "examples": [
+                { "text": "I almost fell asleep in class.", "tag": null },
+                { "text": "She almost won the game.", "tag": null },
+                { "text": "Did you almost miss the bus?", "tag": null }
+              ],
+              "check": {
+                "question": "What does almost mean?",
+                "choices": ["it happened many times", "very close, but it hasn’t happened", "long ago"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "alone",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adj./adv.",
+              "zh": "獨自的；獨自地",
+              "definition": "With no other people",
+              "note": null,
+              "examples": [
+                { "text": "She is alone at home.", "tag": "adj." },
+                { "text": "He walked alone at night.", "tag": "adv." },
+                { "text": "Are you alone right now?", "tag": "adj." }
+              ],
+              "check": {
+                "question": "What does alone mean?",
+                "choices": ["with many friends", "very busy", "with no other people"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "aloud",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adv.",
+              "zh": "大聲地",
+              "definition": "In a way that other people can hear",
+              "note": null,
+              "examples": [
+                { "text": "Please read aloud.", "tag": null },
+                { "text": "She laughed aloud.", "tag": null },
+                { "text": "Can you say it aloud?", "tag": null }
+              ],
+              "check": {
+                "question": "What does aloud mean?",
+                "choices": ["only in your head", "very quietly", "so other people can hear"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "alphabet",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "字母表",
+              "definition": "All the letters from A to Z",
+              "note": null,
+              "examples": [
+                { "text": "The English alphabet has 26 letters.", "tag": null },
+                { "text": "Please write your name using the English alphabet.", "tag": null },
+                { "text": "Do you know the whole alphabet?", "tag": null }
+              ],
+              "check": {
+                "question": "What is the alphabet?",
+                "choices": ["numbers from 1 to 10", "letters from A to Z", "a kind of book"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "although",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "conj.",
+              "zh": "雖然",
+              "definition": "Used to show a difference between two ideas",
+              "note": null,
+              "examples": [
+                { "text": "Although it was raining, we went out.", "tag": null },
+                { "text": "She smiled although she was tired.", "tag": null },
+                { "text": "Did you go to the gym although it was raining?", "tag": null }
+              ],
+              "check": {
+                "question": "What does although show?",
+                "choices": ["the same idea", "a difference between ideas", "a time in the past"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "altogether",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adv.",
+              "zh": "總共；完全地",
+              "definition": "Completely, or in total",
+              "note": null,
+              "examples": [
+                { "text": "That’s 100 dollars altogether.", "tag": null },
+                { "text": "I don’t altogether agree.", "tag": null },
+                { "text": "How much is it altogether?", "tag": null }
+              ],
+              "check": {
+                "question": "What does altogether mean?",
+                "choices": ["very slowly", "very loudly", "in total or completely"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "a.m.",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adv.",
+              "zh": "上午",
+              "definition": "The time from 12:00 at night to 12:00 at lunchtime",
+              "note": null,
+              "examples": [
+                { "text": "School starts at 8 a.m.", "tag": null },
+                { "text": "I woke up at 6 a.m.", "tag": null },
+                { "text": "Do you study in the a.m.?", "tag": null }
+              ],
+              "check": {
+                "question": "What does a.m. mean?",
+                "choices": ["the time in the morning", "the time in the evening", "the time after dinner"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "ambition",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "志向",
+              "definition": "Something you really want to do in the future",
+              "note": null,
+              "examples": [
+                { "text": "Her ambition is to be a doctor.", "tag": null },
+                { "text": "He has a big ambition.", "tag": null },
+                { "text": "What is your ambition?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an ambition?",
+                "choices": ["something you already did", "something you really want to do", "something you forgot"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "ambulance",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "救護車",
+              "definition": "A type of car or van that takes sick or hurt people to hospital",
+              "note": null,
+              "examples": [
+                { "text": "The ambulance arrived quickly.", "tag": null },
+                { "text": "She was taken to hospital in an ambulance.", "tag": null },
+                { "text": "Did you call an ambulance?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an ambulance?",
+                "choices": ["a car for shopping", "a bus for students", "a car or van for sick or hurt people"],
+                "answer": "C"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

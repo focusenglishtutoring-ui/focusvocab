@@ -224,6 +224,76 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       "choices": {"A":"alive","B":"alike","C":"all right"},
       "correct": "C"
     }
+  ],
+  "4": [
+    {
+      "id": 1,
+      "prompt": "Please read the sentence ______ so everyone can hear you.",
+      "choices": {"A":"alone","B":"almost","C":"aloud"},
+      "correct": "C"
+    },
+    {
+      "id": 2,
+      "prompt": "Her ambition is ______ a doctor one day.",
+      "choices": {"A":"to forget","B":"to become","C":"to arrive"},
+      "correct": "B"
+    },
+    {
+      "id": 3,
+      "prompt": "The teacher does not ______ phones in class.",
+      "choices": {"A":"allow","B":"almost","C":"aloud"},
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "prompt": "That’s 300 dollars ______.",
+      "choices": {"A":"aloud","B":"altogether","C":"almost"},
+      "correct": "B"
+    },
+    {
+      "id": 5,
+      "prompt": "School starts at 8 ______.",
+      "choices": {"A":"p.m.","B":"noon","C":"a.m."},
+      "correct": "C"
+    },
+    {
+      "id": 6,
+      "prompt": "She stayed at home ______ all evening.",
+      "choices": {"A":"aloud","B":"almost","C":"alone"},
+      "correct": "C"
+    },
+    {
+      "id": 7,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {
+        "A":"We called an ambulance for the hurt man.",
+        "B":"We called an alphabet for the hurt man.",
+        "C":"We called an ambition for the hurt man."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 8,
+      "prompt": "______ it was raining, we still went out.",
+      "choices": {"A":"Altogether","B":"Almost","C":"Although"},
+      "correct": "C"
+    },
+    {
+      "id": 9,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {
+        "A":"The English alphabet has 26 letters.",
+        "B":"The English alphabet has 26 numbers.",
+        "C":"The English alphabet has 26 words."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 10,
+      "prompt": "I ______ missed the bus this morning.",
+      "choices": {"A":"altogether","B":"almost","C":"alone"},
+      "correct": "B"
+    }
   ]
 };
 
