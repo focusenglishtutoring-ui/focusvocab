@@ -1468,6 +1468,227 @@
           ]
         }
       ]
+    },
+    {
+      "order": 7,
+      "title": "Module 7",
+      "entries": [
+        {
+          "headword": "approach",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "方法；方式",
+              "definition": "A way of doing something",
+              "note": null,
+              "examples": [
+                { "text": "This is a new approach to learning English.", "tag": null },
+                { "text": "Her approach to studying works well.", "tag": null },
+                { "text": "What approach should we use?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an approach?",
+                "choices": ["a way of doing something", "a mistake", "a result"],
+                "answer": "A"
+              }
+            },
+            {
+              "sense_order": 2,
+              "pos": "v.",
+              "zh": "接近；走近",
+              "definition": "To move closer to someone or something",
+              "note": null,
+              "examples": [
+                { "text": "The dog approaches slowly.", "tag": "present simple –s" },
+                { "text": "He approached the teacher after class.", "tag": "past simple" },
+                { "text": "Did she approach the door quietly?", "tag": null }
+              ],
+              "check": {
+                "question": "What does approach mean here?",
+                "choices": ["to wait", "to move away", "to move closer"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "approve",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "同意；批准",
+              "definition": "To say yes to something after thinking about it",
+              "note": null,
+              "examples": [
+                { "text": "The teacher approves the plan.", "tag": "present simple –s" },
+                { "text": "The school approved the trip.", "tag": "past simple" },
+                { "text": "Did your parents approve the idea?", "tag": null }
+              ],
+              "check": {
+                "question": "What does approve mean?",
+                "choices": ["to say yes", "to forget something", "to ask a question"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "approximately",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adv.",
+              "zh": "大約",
+              "definition": "Close to a number. It can be a little less or a little more than the real number",
+              "note": null,
+              "examples": [
+                { "text": "The test takes approximately one hour.", "tag": null },
+                { "text": "There were approximately 20 students.", "tag": null },
+                { "text": "How many people were there approximately?", "tag": null }
+              ],
+              "check": {
+                "question": "What does approximately mean?",
+                "choices": ["close to a number", "exactly the same number", "very far from the number"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "architect",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "建築師",
+              "definition": "A person who plans how buildings will look and be built",
+              "note": null,
+              "examples": [
+                { "text": "The architect planned the school.", "tag": null },
+                { "text": "She wants to be an architect.", "tag": null },
+                { "text": "Did the architect visit the building site?", "tag": null }
+              ],
+              "check": {
+                "question": "What does an architect do?",
+                "choices": ["plans buildings", "cleans buildings", "sells houses"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "architecture",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "建築；建築風格",
+              "definition": "The way buildings look and are made",
+              "note": null,
+              "examples": [
+                { "text": "I like modern architecture.", "tag": null },
+                { "text": "The city is famous for its architecture.", "tag": null },
+                { "text": "Do you study architecture?", "tag": null }
+              ],
+              "check": {
+                "question": "What is architecture?",
+                "choices": ["the cost of buildings", "the size of buildings", "the way buildings look"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "area",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "區域；地區",
+              "definition": "A part of a place",
+              "note": null,
+              "examples": [
+                { "text": "This area is very quiet.", "tag": null },
+                { "text": "Don’t play in that area.", "tag": null },
+                { "text": "What area do you live in?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an area?",
+                "choices": ["a person", "a part of a place", "a building"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "arm",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "手臂",
+              "definition": "The part of the body from the shoulder to the hand",
+              "note": null,
+              "examples": [
+                { "text": "He broke his arm.", "tag": null },
+                { "text": "She raised her arm.", "tag": null },
+                { "text": "Does your arm hurt?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an arm?",
+                "choices": ["part of the leg", "part of the body", "part of the head"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "armchair",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "扶手椅",
+              "definition": "A chair with arms that you sit in",
+              "note": null,
+              "examples": [
+                { "text": "He sat in the armchair.", "tag": null },
+                { "text": "The armchair is near the window.", "tag": null },
+                { "text": "Is the armchair comfortable to sit in?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an armchair?",
+                "choices": ["a table", "a chair you sit in with arms", "a bed"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "army",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "陸軍；軍隊",
+              "definition": "A group of people who protect their country",
+              "note": null,
+              "examples": [
+                { "text": "He joined the army last year.", "tag": null },
+                { "text": "The army protects the country.", "tag": null },
+                { "text": "Is the army large in this country?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an army?",
+                "choices": ["people who teach in schools", "people who build roads", "people who protect a country"],
+                "answer": "C"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

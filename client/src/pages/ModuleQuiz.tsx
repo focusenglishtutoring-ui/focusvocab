@@ -430,6 +430,72 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       "choices": {"A":"apartment building","B":"apartment","C":"app"},
       "correct": "B"
     }
+  ],
+  "7": [
+    {
+      "id": 1,
+      "prompt": "The city is famous for its modern ______.",
+      "choices": {"A":"architect","B":"architecture","C":"area"},
+      "correct": "B"
+    },
+    {
+      "id": 2,
+      "prompt": "The dog slowly ______ the door.",
+      "choices": {"A":"approves","B":"approaches","C":"approximately"},
+      "correct": "B"
+    },
+    {
+      "id": 3,
+      "prompt": "This is a new ______ to learning English.",
+      "choices": {"A":"approach","B":"area","C":"army"},
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "prompt": "There were ______ 30 students in the class.",
+      "choices": {"A":"approve","B":"exactly","C":"approximately"},
+      "correct": "C"
+    },
+    {
+      "id": 5,
+      "prompt": "She wants to become an ______ and design buildings.",
+      "choices": {"A":"architecture","B":"architect","C":"army"},
+      "correct": "B"
+    },
+    {
+      "id": 6,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {
+        "A":"The teacher approved the plan.",
+        "B":"The teacher approached the plan.",
+        "C":"The teacher approximately the plan."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 7,
+      "prompt": "Don’t play in that ______; it’s dangerous.",
+      "choices": {"A":"architect","B":"area","C":"arm"},
+      "correct": "B"
+    },
+    {
+      "id": 8,
+      "prompt": "He broke his ______ while playing basketball.",
+      "choices": {"A":"army","B":"arm","C":"armchair"},
+      "correct": "B"
+    },
+    {
+      "id": 9,
+      "prompt": "He sat down in the comfortable ______ by the window.",
+      "choices": {"A":"arm","B":"army","C":"armchair"},
+      "correct": "C"
+    },
+    {
+      "id": 10,
+      "prompt": "He joined the ______ last year to protect his country.",
+      "choices": {"A":"area","B":"architect","C":"army"},
+      "correct": "C"
+    }
   ]
 };
 
