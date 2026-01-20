@@ -636,6 +636,72 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       "choices": {"A":"aware","B":"balance","C":"award"},
       "correct": "C"
     }
+  ],
+  "10": [
+    {
+      "id": 1,
+      "prompt": "I need to go to the ______ to take out some money.",
+      "choices": {"A":"bank","B":"battle","C":"base"},
+      "correct": "A"
+    },
+    {
+      "id": 2,
+      "prompt": "The statue stands on a wide ______.",
+      "choices": {"A":"basic","B":"base","C":"beauty"},
+      "correct": "B"
+    },
+    {
+      "id": 3,
+      "prompt": "The story is ______ on real events.",
+      "choices": {"A":"beaten","B":"battled","C":"based"},
+      "correct": "C"
+    },
+    {
+      "id": 4,
+      "prompt": "We learned some ______ rules before the test.",
+      "choices": {"A":"basic","B":"base","C":"beauty"},
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "prompt": "They talked about a famous ______ from history.",
+      "choices": {"A":"bean","B":"battle","C":"bank"},
+      "correct": "B"
+    },
+    {
+      "id": 6,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {
+        "A":"She battled to finish the work.",
+        "B":"She battled the drum loudly.",
+        "C":"She battled the game easily."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 7,
+      "prompt": "She cooked some ______ for dinner.",
+      "choices": {"A":"bears","B":"beats","C":"beans"},
+      "correct": "C"
+    },
+    {
+      "id": 8,
+      "prompt": "I can’t ______ the noise anymore.",
+      "choices": {"A":"beat","B":"bear","C":"battle"},
+      "correct": "B"
+    },
+    {
+      "id": 9,
+      "prompt": "Our team ______ theirs yesterday.",
+      "choices": {"A":"lost","B":"stopped","C":"beat"},
+      "correct": "C"
+    },
+    {
+      "id": 10,
+      "prompt": "The ______ of the place surprised everyone.",
+      "choices": {"A":"base","B":"bank","C":"beauty"},
+      "correct": "C"
+    }
   ]
 };
 

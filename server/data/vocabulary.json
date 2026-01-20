@@ -2131,6 +2131,222 @@
           ]
         }
       ]
+    },
+    {
+      "order": 10,
+      "title": "Module 10",
+      "entries": [
+        {
+          "headword": "bank",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "銀行",
+              "definition": "A place where people keep money or get money",
+              "note": null,
+              "examples": [
+                { "text": "I need to go to the bank today.", "tag": null },
+                { "text": "She works at a bank.", "tag": null },
+                { "text": "Is there a bank near here?", "tag": null }
+              ],
+              "check": {
+                "question": "What is a bank?",
+                "choices": ["a place for money", "a hospital", "a park"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "base",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "基礎；底部",
+              "definition": "The bottom part of something, or the main part it stands on",
+              "note": null,
+              "examples": [
+                { "text": "The statue has a wide base.", "tag": null },
+                { "text": "This chair has a strong base.", "tag": null },
+                { "text": "Is the base strong enough?", "tag": null }
+              ],
+              "check": {
+                "question": "What is a base?",
+                "choices": ["the top part", "the bottom part", "the color"],
+                "answer": "B"
+              }
+            },
+            {
+              "sense_order": 2,
+              "pos": "v.",
+              "zh": "以…為根據",
+              "definition": "To use something as the main idea or reason",
+              "note": null,
+              "examples": [
+                { "text": "The story is based on real events.", "tag": "past simple" },
+                { "text": "We base our answer on the text.", "tag": null },
+                { "text": "Is this idea based on facts?", "tag": null }
+              ],
+              "check": {
+                "question": "What does base mean here?",
+                "choices": ["to throw away", "to hide", "to use as the main idea"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "basic",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adj.",
+              "zh": "基本的",
+              "definition": "Simple and most important",
+              "note": null,
+              "examples": [
+                { "text": "We learned some basic words.", "tag": null },
+                { "text": "This is basic math.", "tag": null },
+                { "text": "Do you know the basic rules?", "tag": null }
+              ],
+              "check": {
+                "question": "What does basic mean?",
+                "choices": ["very difficult", "simple and important", "dangerous"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "battle",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "戰爭；戰鬥",
+              "definition": "A fight between groups of people",
+              "note": null,
+              "examples": [
+                { "text": "The battle lasted all day.", "tag": null },
+                { "text": "They talked about the famous battle.", "tag": null },
+                { "text": "Who won the battle?", "tag": null }
+              ],
+              "check": {
+                "question": "What is a battle?",
+                "choices": ["a game", "a lesson", "a fight"],
+                "answer": "C"
+              }
+            },
+            {
+              "sense_order": 2,
+              "pos": "v.",
+              "zh": "奮鬥；對抗",
+              "definition": "To try very hard to deal with a problem",
+              "note": null,
+              "examples": [
+                { "text": "He battles his fears.", "tag": "present simple –s" },
+                { "text": "She battled to finish the work.", "tag": "past simple" },
+                { "text": "Are they battling the problem together?", "tag": null }
+              ],
+              "check": {
+                "question": "What does battle mean here?",
+                "choices": ["to rest", "to try very hard", "to forget"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "bean",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "豆子",
+              "definition": "A small round food from a plant",
+              "note": null,
+              "examples": [
+                { "text": "She cooked some beans.", "tag": null },
+                { "text": "These beans are tasty.", "tag": null },
+                { "text": "Do you like beans?", "tag": null }
+              ],
+              "check": {
+                "question": "What is a bean?",
+                "choices": ["a drink", "a tool", "a kind of food"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "bear",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "忍受；承受",
+              "definition": "To accept or deal with something difficult",
+              "note": null,
+              "examples": [
+                { "text": "I can’t bear the noise.", "tag": null },
+                { "text": "She bore the pain quietly.", "tag": "past simple" },
+                { "text": "Can you bear waiting a little longer?", "tag": null }
+              ],
+              "check": {
+                "question": "What does bear mean here?",
+                "choices": ["to accept or deal with", "to run fast", "to shout"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "beat",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "打敗；敲打",
+              "definition": "To win against someone, or hit something again and again",
+              "note": null,
+              "examples": [
+                { "text": "Our team beat theirs.", "tag": "past simple" },
+                { "text": "He beats the drum loudly.", "tag": "present simple –s" },
+                { "text": "Did you beat the game?", "tag": null }
+              ],
+              "check": {
+                "question": "What does beat mean here?",
+                "choices": ["to lose", "to win or hit", "to stop"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "beauty",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "美；美麗",
+              "definition": "Something that looks very nice or makes people feel good when they see it",
+              "note": null,
+              "examples": [
+                { "text": "The beauty of the place surprised us.", "tag": null },
+                { "text": "She talked about the beauty of nature.", "tag": null },
+                { "text": "Do you see the beauty in simple things?", "tag": null }
+              ],
+              "check": {
+                "question": "What is beauty?",
+                "choices": ["something very loud", "something dangerous", "something that looks very nice"],
+                "answer": "C"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
