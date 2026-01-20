@@ -1915,6 +1915,222 @@
           ]
         }
       ]
+    },
+    {
+      "order": 9,
+      "title": "Module 9",
+      "entries": [
+        {
+          "headword": "avoid",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "v.",
+              "zh": "避免",
+              "definition": "To stay away from something to stop a problem",
+              "note": null,
+              "examples": [
+                { "text": "Try to avoid junk food.", "tag": null },
+                { "text": "He avoided talking about the test.", "tag": "past simple" },
+                { "text": "Do you avoid making mistakes?", "tag": null }
+              ],
+              "check": {
+                "question": "What does avoid mean?",
+                "choices": ["stay away from", "look for", "enjoy"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "awake",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adj.",
+              "zh": "醒著的",
+              "definition": "Not sleeping",
+              "note": null,
+              "examples": [
+                { "text": "She is still awake.", "tag": null },
+                { "text": "I stayed awake all night.", "tag": null },
+                { "text": "Are you fully awake now?", "tag": null }
+              ],
+              "check": {
+                "question": "What does awake mean?",
+                "choices": ["very tired", "not sleeping", "excited"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "award",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "獎項",
+              "definition": "A prize given to someone for doing something well",
+              "note": null,
+              "examples": [
+                { "text": "She won an award for her work.", "tag": null },
+                { "text": "The award was given yesterday.", "tag": null },
+                { "text": "Did he receive the award?", "tag": null }
+              ],
+              "check": {
+                "question": "What is an award?",
+                "choices": ["a test", "a rule", "a prize"],
+                "answer": "C"
+              }
+            },
+            {
+              "sense_order": 2,
+              "pos": "v.",
+              "zh": "頒發",
+              "definition": "To give someone a prize",
+              "note": null,
+              "examples": [
+                { "text": "The school awards prizes each year.", "tag": "present simple –s" },
+                { "text": "They awarded her first place.", "tag": "past simple" },
+                { "text": "Who will award the prize?", "tag": null }
+              ],
+              "check": {
+                "question": "What does award mean here?",
+                "choices": ["to give a prize", "to take something away", "to hide something"],
+                "answer": "A"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "aware",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adj.",
+              "zh": "知道的；察覺的",
+              "definition": "Knowing about something",
+              "note": null,
+              "examples": [
+                { "text": "I am aware of the problem.", "tag": null },
+                { "text": "She wasn’t aware of the rule.", "tag": null },
+                { "text": "Are you aware of the time?", "tag": null }
+              ],
+              "check": {
+                "question": "What does aware mean?",
+                "choices": ["sleeping", "knowing about something", "forgetting something"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "awful",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adj.",
+              "zh": "很糟的",
+              "definition": "Very bad",
+              "note": null,
+              "examples": [
+                { "text": "The weather was awful.", "tag": null },
+                { "text": "He felt awful after the test.", "tag": null },
+                { "text": "Was the movie awful?", "tag": null }
+              ],
+              "check": {
+                "question": "What does awful mean?",
+                "choices": ["very good", "okay", "very bad"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "backwards",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "adv.",
+              "zh": "向後地；倒著",
+              "definition": "Moving from front to back, or in the opposite direction",
+              "note": null,
+              "examples": [
+                { "text": "He walked backwards.", "tag": null },
+                { "text": "The word was written backwards.", "tag": null },
+                { "text": "Can you count backwards from ten?", "tag": null }
+              ],
+              "check": {
+                "question": "What does backwards mean?",
+                "choices": ["very quickly", "in the opposite direction", "very carefully"],
+                "answer": "B"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "baggage",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "行李",
+              "definition": "Bags and suitcases used when traveling",
+              "note": null,
+              "examples": [
+                { "text": "Please collect your baggage.", "tag": null },
+                { "text": "Her baggage is very heavy.", "tag": null },
+                { "text": "Where is the baggage area?", "tag": null }
+              ],
+              "check": {
+                "question": "What is baggage?",
+                "choices": ["clothes you wear", "food for travel", "bags for travel"],
+                "answer": "C"
+              }
+            }
+          ]
+        },
+        {
+          "headword": "balance",
+          "senses": [
+            {
+              "sense_order": 1,
+              "pos": "n.",
+              "zh": "平衡",
+              "definition": "The state of not falling to one side",
+              "note": null,
+              "examples": [
+                { "text": "He lost his balance.", "tag": null },
+                { "text": "Good balance is important.", "tag": null },
+                { "text": "Can you keep your balance?", "tag": null }
+              ],
+              "check": {
+                "question": "What is balance?",
+                "choices": ["running fast", "not falling", "sitting down"],
+                "answer": "B"
+              }
+            },
+            {
+              "sense_order": 2,
+              "pos": "v.",
+              "zh": "保持平衡",
+              "definition": "To stay steady without falling",
+              "note": null,
+              "examples": [
+                { "text": "She balances on one foot.", "tag": "present simple –s" },
+                { "text": "He balanced carefully.", "tag": "past simple" },
+                { "text": "Can you balance on the line?", "tag": null }
+              ],
+              "check": {
+                "question": "What does balance mean here?",
+                "choices": ["to stay steady", "to sit down", "to jump"],
+                "answer": "A"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

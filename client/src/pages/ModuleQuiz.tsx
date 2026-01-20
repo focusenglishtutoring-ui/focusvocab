@@ -566,6 +566,76 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       "choices": {"A":"arrive","B":"arrange","C":"attend"},
       "correct": "C"
     }
+  ],
+  "9": [
+    {
+      "id": 1,
+      "prompt": "He lost his ______ while standing on one foot.",
+      "choices": {"A":"award","B":"balance","C":"baggage"},
+      "correct": "B"
+    },
+    {
+      "id": 2,
+      "prompt": "Try to ______ junk food if you want to be healthier.",
+      "choices": {"A":"avoid","B":"enjoy","C":"award"},
+      "correct": "A"
+    },
+    {
+      "id": 3,
+      "prompt": "She felt ______ after getting sick on the trip.",
+      "choices": {"A":"aware","B":"awake","C":"awful"},
+      "correct": "C"
+    },
+    {
+      "id": 4,
+      "prompt": "Choose the sentence that sounds correct.",
+      "choices": {
+        "A":"She was not aware of the rule.",
+        "B":"She was not awake of the rule.",
+        "C":"She was not awful of the rule."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "prompt": "The prize was ______ to her last year.",
+      "choices": {"A":"avoided","B":"awarded","C":"awakened"},
+      "correct": "B"
+    },
+    {
+      "id": 6,
+      "prompt": "He walked ______ to see where he came from.",
+      "choices": {"A":"carefully","B":"forwards","C":"backwards"},
+      "correct": "C"
+    },
+    {
+      "id": 7,
+      "prompt": "Please collect your ______ at the airport.",
+      "choices": {"A":"balance","B":"baggage","C":"award"},
+      "correct": "B"
+    },
+    {
+      "id": 8,
+      "prompt": "She stayed ______ all night studying.",
+      "choices": {"A":"asleep","B":"awake","C":"awful"},
+      "correct": "B"
+    },
+    {
+      "id": 9,
+      "prompt": "Choose the sentence that uses balance (v.) correctly.",
+      "choices": {
+        "A":"He balanced carefully on the line.",
+        "B":"He balance carefully on the line.",
+        "C":"He balancing carefully on the line."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 10,
+      "prompt": "She won an ______ for her hard work.",
+      "choices": {"A":"aware","B":"balance","C":"award"},
+      "correct": "C"
+    }
   ]
 };
 
