@@ -79,36 +79,67 @@ export default function Unit() {
           ))}
         </div>
 
-        {/* Mid-Unit Test Section */}
+        {/* Tests & Assessments Section */}
         <div className="mt-8 space-y-4 pb-12">
           <h2 className="text-2xl font-bold px-1">Tests & Assessments</h2>
-          <Card 
-            className="group cursor-pointer border-2 border-primary/20 hover:border-primary transition-all duration-300 bg-primary/5 hover:shadow-lg"
-            onClick={() => setLocation(`/mid-unit-test-1`)}
-          >
-            <CardContent className="p-6">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary text-primary-foreground rounded-xl flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
-                    <Trophy className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">Mid-Unit Test (Modules 1–5)</h3>
-                    <p className="text-muted-foreground">Comprehensive assessment of the first five modules</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="text-right">
-                    <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-1">Status</p>
-                    <div className="text-lg font-bold text-primary">
-                      Available
+          
+          <div className="grid gap-4">
+            <Card 
+              className="group cursor-pointer border-2 border-primary/20 hover:border-primary transition-all duration-300 bg-primary/5 hover:shadow-lg"
+              onClick={() => setLocation(`/mid-unit-test-1`)}
+            >
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-primary text-primary-foreground rounded-xl flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+                      <Trophy className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold">Mid-Unit Test (Modules 1–5)</h3>
+                      <p className="text-muted-foreground">Comprehensive assessment of the first five modules</p>
                     </div>
                   </div>
-                  <ChevronRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-all" />
+                  <div className="flex items-center gap-4">
+                    <div className="text-right">
+                      <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-1">Status</p>
+                      <div className="text-lg font-bold text-primary">
+                        Available
+                      </div>
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-all" />
+                  </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+
+            <Card 
+              className="group cursor-pointer border-2 border-primary/20 hover:border-primary transition-all duration-300 bg-primary/5 hover:shadow-lg"
+              onClick={() => setLocation(`/unit-test-2`)}
+            >
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-primary text-primary-foreground rounded-xl flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+                      <Trophy className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold">Second-Half Unit Test (Modules 6–10)</h3>
+                      <p className="text-muted-foreground">Comprehensive assessment of modules six to ten</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="text-right">
+                      <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-1">Status</p>
+                      <div className="text-lg font-bold text-primary">
+                        Available
+                      </div>
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-all" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </Layout>
