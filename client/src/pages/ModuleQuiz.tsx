@@ -825,6 +825,11 @@ export default function ModuleQuiz() {
                     <Check className="mr-2 w-5 h-5" />
                     Finish & Start Mid-Unit Test
                   </Button>
+                ) : moduleId === "10" ? (
+                  <Button size="lg" onClick={() => setLocation("/unit-test-2")} className="flex-1 rounded-full h-14 text-lg">
+                    <Check className="mr-2 w-5 h-5" />
+                    Finish & Start Unit Test 2
+                  </Button>
                 ) : (
                   <Button size="lg" onClick={handleRetry} className="flex-1 rounded-full h-14 text-lg">
                     <RotateCcw className="mr-2 w-5 h-5" />
