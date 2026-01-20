@@ -24,25 +24,25 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
     },
     {
       "id": 2,
-      "prompt": "The clown ______ the children at the party.",
-      "choices": {"A":"amuses","B":"announces","C":"apologises"},
+      "prompt": "The school will ______ the results tomorrow.",
+      "choices": {"A":"announce","B":"announcement","C":"apologise"},
       "correct": "A"
     },
     {
       "id": 3,
-      "prompt": "The movie was very ______; everyone laughed.",
-      "choices": {"A":"amused","B":"amusing","C":"amazing"},
+      "prompt": "The view from the mountain was ______.",
+      "choices": {"A":"amazed","B":"amazing","C":"amaze"},
       "correct": "B"
     },
     {
       "id": 4,
       "prompt": "Choose the sentence that sounds correct.",
       "choices": {
-        "A":"He told an amusing story.",
-        "B":"He told an amuse story.",
-        "C":"He told an amused story."
+        "A":"He gave an apologise to the teacher.",
+        "B":"He apologised for being late.",
+        "C":"The apologise was short."
       },
-      "correct": "A"
+      "correct": "B"
     },
     {
       "id": 5,
@@ -54,17 +54,17 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       "id": 6,
       "prompt": "Choose the sentence that sounds correct.",
       "choices": {
-        "A":"The story amused everyone in the class.",
-        "B":"The story amazing everyone in the class.",
-        "C":"The story announcement everyone in the class."
+        "A":"The teacher announcement the test date.",
+        "B":"She will announcement tomorrow.",
+        "C":"We listened carefully to the announcement."
       },
-      "correct": "A"
+      "correct": "C"
     },
     {
       "id": 7,
-      "prompt": "Does this game ______ you?",
-      "choices": {"A":"amuse","B":"amazing","C":"ages"},
-      "correct": "A"
+      "prompt": "The class is for children ______ 8 to 10.",
+      "choices": {"A":"age","B":"aged","C":"ages"},
+      "correct": "B"
     },
     {
       "id": 8,
@@ -332,19 +332,19 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
     },
     {
       "id": 6,
-      "prompt": "Choose the sentence that uses *announce* correctly.",
+      "prompt": "Choose the sentence that uses *amuse* correctly.",
       "choices": {
-        "A":"The teacher will announcement the winner today.",
-        "B":"The teacher will announce the winner today.",
-        "C":"The teacher will announcer the winner today."
+        "A":"The clown amuses the children.",
+        "B":"The clown amazing the children.",
+        "C":"The clown announce the children."
       },
-      "correct": "B"
+      "correct": "A"
     },
     {
       "id": 7,
-      "prompt": "We listened carefully to the school ______.",
-      "choices": {"A":"announce","B":"anniversary","C":"announcement"},
-      "correct": "C"
+      "prompt": "The movie was very ______; everyone laughed.",
+      "choices": {"A":"amused","B":"amusing","C":"amazing"},
+      "correct": "B"
     },
     {
       "id": 8,
