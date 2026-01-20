@@ -1,0 +1,99 @@
+Remove duplicate vocabulary items (announce and announcement) from Module 5 and replace them with amuse and amusing, and ensure the 2nd-half unit quiz (Modules 6–10) is updated accordingly.
+
+Step 1: Update Module 5 Vocabulary List
+
+Remove these two entries from Module 5 entirely:
+
+announce (v.)
+
+announcement (n.)
+
+Insert the following two new entries in Module 5, maintaining the same visual layout, spacing, and interaction patterns used for all other vocabulary items in the app.
+
+amuse (v.) – 逗樂；使覺得有趣
+
+What does it mean?
+To make someone laugh or smile.
+
+Examples:
+
+The clown amuses the children. (present simple –s)
+
+The story amused everyone in the class. (past simple)
+
+Does this game amuse you?
+
+Check your understanding:
+What does amuse mean?
+A) to make someone laugh or smile
+B) to make someone angry
+C) to make someone sleep
+
+Correct answer: A
+
+amusing (adj.) – 有趣的；好笑的
+
+What does it mean?
+Something or someone that makes people laugh or smile.
+
+Examples:
+
+The movie was amusing.
+
+She told an amusing story.
+
+Was the show amusing?
+
+Check your understanding:
+What does amusing describe?
+A) something boring
+B) something or someone that makes people laugh or smile
+C) something very difficult
+
+Correct answer: B
+
+Step 2: Update the 2nd-Half Unit Quiz (Modules 6–10)
+
+Locate the 2nd-half unit quiz that currently includes:
+
+announce
+
+announcement
+
+Remove both words from the quiz word bank, questions, and answer logic.
+
+Add the following two words instead, ensuring:
+
+Each word appears once
+
+They follow the same difficulty level and contextual usage as other quiz items
+
+They integrate into dropdowns, word banks, and answer validation exactly like existing words
+
+New quiz words to add:
+
+amuse (v.)
+
+amusing (adj.)
+
+Do not change:
+
+Quiz structure
+
+UI layout
+
+Feedback timing
+
+Scoring logic
+
+Constraints
+
+Keep Module 1 unchanged (announce / announcement stay there).
+
+No duplicate vocabulary across modules.
+
+Maintain PET-level language.
+
+Preserve all existing animations, styles, and interaction rules.
+
+Only update Module 5 and the 2nd-half quiz.

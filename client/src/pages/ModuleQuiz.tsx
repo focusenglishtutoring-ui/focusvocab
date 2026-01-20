@@ -24,25 +24,25 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
     },
     {
       "id": 2,
-      "prompt": "The school will ______ the results tomorrow.",
-      "choices": {"A":"announce","B":"announcement","C":"apologise"},
+      "prompt": "The clown ______ the children at the party.",
+      "choices": {"A":"amuses","B":"announces","C":"apologises"},
       "correct": "A"
     },
     {
       "id": 3,
-      "prompt": "The view from the mountain was ______.",
-      "choices": {"A":"amazed","B":"amazing","C":"amaze"},
+      "prompt": "The movie was very ______; everyone laughed.",
+      "choices": {"A":"amused","B":"amusing","C":"amazing"},
       "correct": "B"
     },
     {
       "id": 4,
       "prompt": "Choose the sentence that sounds correct.",
       "choices": {
-        "A":"He gave an apologise to the teacher.",
-        "B":"He apologised for being late.",
-        "C":"The apologise was short."
+        "A":"He told an amusing story.",
+        "B":"He told an amuse story.",
+        "C":"He told an amused story."
       },
-      "correct": "B"
+      "correct": "A"
     },
     {
       "id": 5,
@@ -54,17 +54,17 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       "id": 6,
       "prompt": "Choose the sentence that sounds correct.",
       "choices": {
-        "A":"The teacher announcement the test date.",
-        "B":"She will announcement tomorrow.",
-        "C":"We listened carefully to the announcement."
+        "A":"The story amused everyone in the class.",
+        "B":"The story amazing everyone in the class.",
+        "C":"The story announcement everyone in the class."
       },
-      "correct": "C"
+      "correct": "A"
     },
     {
       "id": 7,
-      "prompt": "The class is for children ______ 8 to 10.",
-      "choices": {"A":"age","B":"aged","C":"ages"},
-      "correct": "B"
+      "prompt": "Does this game ______ you?",
+      "choices": {"A":"amuse","B":"amazing","C":"ages"},
+      "correct": "A"
     },
     {
       "id": 8,

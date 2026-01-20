@@ -16,7 +16,8 @@ const WORD_BANK = [
   "attention (n.)", "avoid (v.)", "awake (adj.)", "award (n.)", "award (v.)",
   "aware (adj.)", "awful (adj.)", "backwards (adv.)", "baggage (n.)", "balance (n.)",
   "balance (v.)", "bank (n.)", "base (n.)", "base (v.)", "basic (adj.)",
-  "battle (n.)", "battle (v.)", "bean (n.)", "bear (v.)", "beat (v.)", "beauty (n.)"
+  "battle (n.)", "battle (v.)", "bean (n.)", "bear (v.)", "beat (v.)", "beauty (n.)",
+  "amuse (v.)", "amusing (adj.)"
 ];
 
 const QUESTIONS = [
@@ -69,7 +70,8 @@ const QUESTIONS = [
   "47. She felt __________ after getting sick.",
   "48. She lives in an __________ on the third floor.",
   "49. __________ can answer this question.",
-  "50. She battled to finish the work."
+  "50. The story __________ the children.",
+  "51. The movie was very __________."
 ];
 
 // Note: question 50 is special, it's a complete sentence to test a specific word if needed, 
@@ -89,7 +91,7 @@ const ANSWERS = [
   "aware (adj.)", "armchair (n.)", "balance (v.)", "army (n.)", "beauty (n.)",
   "asleep (adj.)", "attend (v.)", "arrange (v.)", "area (n.)", "architect (n.)",
   "approach (v.)", "anything (pron.)", "anyway (adv.)", "apartment building (n.)", "award (v.)",
-  "baggage (n.)", "awful (adj.)", "apartment (n.)", "anyone (pron.)", "battle (v.)"
+  "baggage (n.)", "awful (adj.)", "apartment (n.)", "anyone (pron.)", "amuse (v.)", "amusing (adj.)"
 ];
 
 export default function UnitTest2() {

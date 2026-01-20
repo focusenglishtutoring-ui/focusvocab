@@ -13,8 +13,8 @@ const WORD_BANK = [
   "all right / alright (adj./adv.)", "allow (v.)", "almost (adv.)", "alone (adj./adv.)",
   "aloud (adv.)", "alphabet (n.)", "although (conj.)", "altogether (adv.)", "ambition (n.)",
   "ambulance (n.)", "amaze (v.)", "amazed (adj.)", "amazing (adj.)", "among / amongst (prep.)",
-  "amount (n./v.)", "ancient (adj.)", "ankle (n.)", "anniversary (n.)", "announce (v.)",
-  "announcement (n.)", "annoy (v.)", "anxious (adj.)", "anybody (pron.)", "apologise (v.)",
+  "amount (n./v.)", "ancient (adj.)", "ankle (n.)", "anniversary (n.)", "amuse (v.)",
+  "amusing (adj.)", "annoy (v.)", "anxious (adj.)", "anybody (pron.)", "apologise (v.)",
   "apology (n.)", "appear (v.)", "appearance (n.)", "apply (v.) – put on / use",
   "apply (v.) – request / form", "application (n.)", "argue (v.)", "argument (n.)", "album (n.)"
 ];
@@ -22,7 +22,7 @@ const WORD_BANK = [
 const QUESTIONS = [
   "1. The house is hidden __________ the trees.",
   "2. I feel very __________ before an important test.",
-  "3. The teacher makes an important __________ at the start of class.",
+  "3. The clown __________ the children.",
   "4. Please read the sentence __________ so everyone can hear you.",
   "5. The museum shows __________ art from long ago.",
   "6. We wait at the __________ before boarding the plane.",
@@ -49,7 +49,7 @@ const QUESTIONS = [
   "27. I __________ to finish my homework early.",
   "28. A rainbow __________ after the rain stops.",
   "29. Please write your name using the English ________..",
-  "30. The school will __________ the test results today.",
+  "30. The movie was very __________.",
   "31. The driver calls an __________ after the accident.",
   "32. He does not want to __________ with his brother.",
   "33. I give her an __________ for being late.",
@@ -63,7 +63,7 @@ const QUESTIONS = [
   "41. We choose a cheap __________ for our holiday.",
   "42. I feel __________ when I understand the lesson.",
   "43. The test asks about your __________.",
-  "44. The company will __________ new rules today.",
+  "44. They will __________ the winner today.",
   "45. I __________ for a new job this year.",
   "46. The students sit __________ their friends.",
   "47. She has an __________ memory.",
@@ -80,15 +80,15 @@ const CLEAN_QUESTIONS = QUESTIONS.map((q, idx) => {
 });
 
 const ANSWERS = [
-  "among / amongst (prep.)", "anxious (adj.)", "announcement (n.)", "aloud (adv.)", "ancient (adj.)",
+  "among / amongst (prep.)", "anxious (adj.)", "amuse (v.)", "aloud (adv.)", "ancient (adj.)",
   "airport (n.)", "apply (v.) – request / form", "alike (adj./adv.)", "allow (v.)", "anniversary (n.)",
   "ages (n.)", "a.m. (adv.)", "alarm (v.)", "ambition (n.)", "apply (v.) – put on / use",
   "alive (adj.)", "album (n.)", "aged (adj.)", "air conditioning / air conditioner (n.)", "amazed (adj.)",
   "air force (n.)", "anybody (pron.)", "argument (n.)", "ankle (n.)", "anxious (adj.)",
-  "all right / alright (adj./adv.)", "aim (v.)", "appear (v.)", "alphabet (n.)", "announce (v.)",
+  "all right / alright (adj./adv.)", "aim (v.)", "appear (v.)", "alphabet (n.)", "amusing (adj.)",
   "ambulance (n.)", "argue (v.)", "apology (n.)", "amaze (v.)", "alone (adj./adv.)",
   "aim (n.)", "amount (n./v.)", "appearance (n.)", "amazing (adj.)", "alarm (n.)",
-  "airline (n.)", "amazed (adj.)", "age (n.)", "announce (v.)", "apply (v.) – request / form",
+  "airline (n.)", "amazed (adj.)", "age (n.)", "amuse (v.)", "apply (v.) – request / form",
   "among / amongst (prep.)", "amazing (adj.)", "aim (v.)", "air force (n.)", "anxious (adj.)"
 ];
 

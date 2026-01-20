@@ -183,59 +183,45 @@
           ]
         },
         {
-          "headword": "announce",
+          "headword": "amuse",
           "senses": [
             {
               "sense_order": 1,
               "pos": "v.",
-              "zh": "宣布",
-              "definition": "To tell people important news so everyone knows",
+              "zh": "逗樂；使覺得有趣",
+              "definition": "To make someone laugh or smile",
               "note": null,
               "examples": [
-                {
-                  "text": "The school announces the results today.",
-                  "tag": "present simple –s"
-                },
-                {
-                  "text": "They announced the winner yesterday.",
-                  "tag": "past simple"
-                },
-                { "text": "When did they announce the decision?", "tag": null }
+                { "text": "The clown amuses the children.", "tag": "present simple –s" },
+                { "text": "The story amused everyone in the class.", "tag": "past simple" },
+                { "text": "Does this game amuse you?", "tag": null }
               ],
               "check": {
-                "question": "What does announce mean?",
-                "choices": [
-                  "to tell important news",
-                  "to keep something secret",
-                  "to ask a question"
-                ],
+                "question": "What does amuse mean?",
+                "choices": ["to make someone laugh or smile", "to make someone angry", "to make someone sleep"],
                 "answer": "A"
               }
             }
           ]
         },
         {
-          "headword": "announcement",
+          "headword": "amusing",
           "senses": [
             {
               "sense_order": 1,
-              "pos": "n.",
-              "zh": "公告",
-              "definition": "A message that tells people important news",
+              "pos": "adj.",
+              "zh": "有趣的；好笑的",
+              "definition": "Something or someone that makes people laugh or smile",
               "note": null,
               "examples": [
-                { "text": "There was an announcement on the train.", "tag": null },
-                { "text": "We listened carefully to the announcement.", "tag": null },
-                { "text": "Did you hear the announcement?", "tag": null }
+                { "text": "The movie was amusing.", "tag": null },
+                { "text": "She told an amusing story.", "tag": null },
+                { "text": "Was the show amusing?", "tag": null }
               ],
               "check": {
-                "question": "What is an announcement?",
-                "choices": [
-                  "a private conversation",
-                  "a personal diary",
-                  "a message with important news"
-                ],
-                "answer": "C"
+                "question": "What does amusing describe?",
+                "choices": ["something boring", "something or someone that makes people laugh or smile", "something very difficult"],
+                "answer": "B"
               }
             }
           ]
