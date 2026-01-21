@@ -240,7 +240,7 @@ export default function FinalUnitTest() {
             </div>
 
             {/* Passage */}
-            <div className="text-lg leading-loose space-y-4 whitespace-pre-wrap font-serif italic text-foreground/90">
+            <div className="text-lg leading-loose space-y-4 whitespace-pre-wrap font-serif text-foreground/90">
               {renderPassage()}
             </div>
 
