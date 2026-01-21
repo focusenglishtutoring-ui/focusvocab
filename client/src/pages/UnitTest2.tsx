@@ -20,12 +20,12 @@ const WORD_BANK = [
 ];
 
 const QUESTIONS = [
-  "1. I don't live in that city __________; I moved last year.",
+  "1. The movie is __________ on a true story.",
   "2. Does __________ have a pen I can borrow?",
   "3. I'm so hungry I could eat __________ on the menu.",
   "4. It was raining, but we went for a walk __________.",
   "5. I've looked __________, but I still can't find my keys.",
-  "6. The two houses are about 100 meters __________.",
+  "6. The two countries continued to __________ for many years.",
   "7. __________ the rain, it was a very pleasant day.",
   "8. She lives in a small __________ on the third floor.",
   "9. That large __________ has twenty different flats.",
@@ -62,10 +62,10 @@ const QUESTIONS = [
   "40. It's difficult to __________ on one foot for a long time.",
   "41. I need to go to the __________ to withdraw some money.",
   "42. The statue stands on a heavy stone __________.",
-  "43. The movie is __________ on a true story.",
+  "43. I don't live in that city __________; I moved last year.",
   "44. We only need some __________ tools to fix the chair.",
   "45. Many soldiers died in the famous __________ of Waterloo.",
-  "46. The two countries continued to __________ for many years.",
+  "46. The two houses are about 100 meters __________.",
   "47. I ate a delicious salad with green __________ for lunch.",
   "48. I can't __________ the heat in this room; let's open a window.",
   "49. Our team managed to __________ the champions in the final.",
@@ -75,16 +75,16 @@ const QUESTIONS = [
 const CLEAN_QUESTIONS = QUESTIONS;
 
 const ANSWERS = [
-  "anymore (adv.)", "anyone (pron.)", "anything (pron.)", "anyway (adv.)", "anywhere (adv.)",
-  "apart (adv.)", "apart from (prep. phr.)", "apartment (n.)", "apartment building (n.)", "app (n.)",
+  "base (v.)", "anyone (pron.)", "anything (pron.)", "anyway (adv.)", "anywhere (adv.)",
+  "battle (v.)", "apart from (prep. phr.)", "apartment (n.)", "apartment building (n.)", "app (n.)",
   "approach (n.)", "approach (v.)", "approve (v.)", "approximately (adv.)", "architect (n.)",
   "architecture (n.)", "area (n.)", "arm (n.)", "armchair (n.)", "army (n.)",
   "around (prep. / adv.)", "arrange (v.)", "arrangement (n.)", "arrive (v.)", "article (n.)",
   "artistic (adj.)", "asleep (adj.)", "assistant (n.)", "attend (v.)", "attention (n.)",
   "avoid (v.)", "awake (adj.)", "award (n.)", "award (v.)", "aware (adj.)",
   "awful (adj.)", "backwards (adv.)", "baggage (n.)", "balance (n.)", "balance (v.)",
-  "bank (n.)", "base (n.)", "base (v.)", "basic (adj.)", "battle (n.)",
-  "battle (v.)", "bean (n.)", "bear (v.)", "beat (v.)", "beauty (n.)"
+  "bank (n.)", "base (n.)", "anymore (adv.)", "basic (adj.)", "battle (n.)",
+  "apart (adv.)", "bean (n.)", "bear (v.)", "beat (v.)", "beauty (n.)"
 ];
 
 export default function UnitTest2() {
