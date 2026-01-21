@@ -826,10 +826,16 @@ export default function ModuleQuiz() {
                     Finish & Start Mid-Unit Test
                   </Button>
                 ) : moduleId === "10" ? (
-                  <Button size="lg" onClick={() => setLocation("/unit-test-2")} className="flex-1 rounded-full h-14 text-lg">
-                    <Check className="mr-2 w-5 h-5" />
-                    Finish & Start Unit Test 2
-                  </Button>
+                  <div className="flex flex-col sm:flex-row gap-4 w-full">
+                    <Button size="lg" onClick={() => setLocation("/unit-test-2")} className="flex-1 rounded-full h-14 text-lg">
+                      <Check className="mr-2 w-5 h-5" />
+                      Finish & Unit Test 2
+                    </Button>
+                    <Button size="lg" onClick={() => setLocation("/final-unit-test")} className="flex-1 rounded-full h-14 text-lg bg-indigo-600 hover:bg-indigo-700 text-white border-none">
+                      <Trophy className="mr-2 w-5 h-5" />
+                      Take Final Unit Test
+                    </Button>
+                  </div>
                 ) : (
                   <Button size="lg" onClick={handleRetry} className="flex-1 rounded-full h-14 text-lg">
                     <RotateCcw className="mr-2 w-5 h-5" />
