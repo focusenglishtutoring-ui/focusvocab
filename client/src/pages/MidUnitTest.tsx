@@ -126,7 +126,7 @@ export default function MidUnitTest() {
     <Layout>
       <div className="max-w-4xl mx-auto space-y-8 py-8 pb-20">
         <div className="space-y-2">
-          <h1 className="text-3xl font-bold">Mid-Unit Test (Modules 1–5)</h1>
+          <h1 className="text-3xl font-bold">Checkpoint Assessment 1 (Modules 1–5)</h1>
           <p className="text-muted-foreground">Test your knowledge of the vocabulary from the first five modules.</p>
         </div>
 

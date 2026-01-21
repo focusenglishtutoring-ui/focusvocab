@@ -95,7 +95,7 @@ export default function Unit() {
                       <Trophy className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold">Mid-Unit Test (Modules 1–5)</h3>
+                      <h3 className="text-xl font-bold">Checkpoint Assessment 1 (Modules 1–5)</h3>
                       <p className="text-muted-foreground">Comprehensive assessment of the first five modules</p>
                     </div>
                   </div>
@@ -123,7 +123,7 @@ export default function Unit() {
                       <Trophy className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold">Second-Half Unit Test (Modules 6–10)</h3>
+                      <h3 className="text-xl font-bold">Checkpoint Assessment 2 (Modules 6–10)</h3>
                       <p className="text-muted-foreground">Comprehensive assessment of modules six to ten</p>
                     </div>
                   </div>

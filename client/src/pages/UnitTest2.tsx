@@ -125,7 +125,7 @@ export default function UnitTest2() {
     <Layout>
       <div className="max-w-4xl mx-auto space-y-8 py-8 pb-20">
         <div className="space-y-2">
-          <h1 className="text-3xl font-bold">Second-Half Unit Test (Modules 6–10)</h1>
+          <h1 className="text-3xl font-bold">Checkpoint Assessment 2 (Modules 6–10)</h1>
           <p className="text-muted-foreground">Comprehensive assessment of vocabulary from modules six to ten.</p>
         </div>
 
