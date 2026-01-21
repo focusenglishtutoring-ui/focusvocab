@@ -1,0 +1,293 @@
+CORE REQUIREMENTS
+1) The Final Test has 7 sections (Reading 1–7). Users must score >= 90% on the current section to unlock the next section. Sections beyond the current unlocked one are visible but disabled/greyed-out.
+2) Each section has its own word bank (exactly as provided). The word bank is shown in a rectangular bordered box above the passage.
+3) Answers are selected via dropdowns embedded in the passage blanks. Users can change answers any time.
+4) Used-word visual logic:
+   - When a user selects a word in any blank, that word becomes “used” and is displayed with STRIKETHROUGH in the word bank.
+   - Also, in ALL dropdown option lists for that section, used words should appear with strikethrough (or visually muted + strikethrough) to suggest they’re already used.
+   - However, do NOT prevent selecting used words (students may need to change answers).
+   - If a word is no longer selected in any blank, remove the strikethrough (unused again).
+5) Check button behavior:
+   - Each section has a “Check Answers” button that is DISABLED until all blanks in that section have a selected answer (no empty selections).
+   - When clicked, it reveals which blanks are correct vs incorrect.
+   - IMPORTANT: It should NOT show the correct answers for wrong blanks. It only marks them as incorrect (e.g., red outline).
+   - User can edit answers after feedback and click “Check Answers” again as many times as needed.
+6) Scoring:
+   - Score is percentage = (correct blanks / total blanks) * 100, rounded to nearest whole number.
+   - Display “Score: XX% (Y/Z correct)”.
+   - If score >= 90%: show a success message and unlock the next section.
+   - If score < 90%: show a message like “Need 90% to unlock next section. Try again.”
+7) Persistence:
+   - Save progress (unlocked section index + best score per section) in localStorage so refresh doesn’t reset.
+   - Provide a “Reset Final Test” button to clear localStorage and restart.
+8) accessable after end of second-half unit test and in unit overview section in "Tests and Assessements"
+9) design with same style and struture as mid-unit and second-half unit tests
+
+IMPORTANT DETAIL ABOUT WORD STRINGS
+The dropdown options MUST match the word bank strings EXACTLY, including:
+- spaces
+- slashes
+- parentheses
+- punctuation
+Example: "air conditioning / air conditioner (n.)" must match exactly.
+
+CONTENT: SECTIONS 1–7 (use exactly)
+
+SECTION 1
+Title: "📘 Reading 1 — A Beginner Fitness & Health App"
+Word Bank (12):
+1 "alphabet (n.)"
+2 "approximately (adv.)"
+3 "arm (n.)"
+4 "article (n.)"
+5 "amount (n./v.)"
+6 "almost (adv.)"
+7 "album (n.)"
+8 "ankle (n.)"
+9 "app (n.)"
+10 "bean (n.)"
+11 "backwards (adv.)"
+12 "altogether (adv.)"
+Passage (12 blanks):
+"Many young people now use an (1) to learn about exercise and healthy habits. Inside the app, there is an (2) of photos showing correct movements and a short (3) explaining why exercise is important.
+To make learning easier, the exercises are organized using the (4), from A to Z. Each exercise shows the correct (5) of movement, such as lifting your (6) or carefully moving your (7). Some activities even ask students to move (8) to improve balance.
+The app also gives simple health advice. For example, it explains that eating a (9) can be a healthy snack. It shows (10) how many minutes students should exercise each day.
+At first, some students feel (11) tired, but they soon feel stronger. (12), the daily program is short and easy to follow."
+Answer Key:
+(1) "app (n.)"
+(2) "album (n.)"
+(3) "article (n.)"
+(4) "alphabet (n.)"
+(5) "amount (n./v.)"
+(6) "arm (n.)"
+(7) "ankle (n.)"
+(8) "backwards (adv.)"
+(9) "bean (n.)"
+(10) "approximately (adv.)"
+(11) "almost (adv.)"
+(12) "altogether (adv.)"
+
+SECTION 2
+Title: "📘 Reading 2 — Training for Emergency and Service Work"
+Word Bank (15):
+"award (v.)"
+"battle (n.)"
+"assistant (n.)"
+"balance (v.)"
+"army (n.)"
+"beauty (n.)"
+"aware (adj.)"
+"ambulance (n.)"
+"beat (v.)"
+"attend (v.)"
+"air force (n.)"
+"award (n.)"
+"bear (v.)"
+"battle (v.)"
+"balance (n.)"
+Passage (15 blanks):
+"Many young people choose to (1) special training programs to prepare for service jobs. Some want to join the (2), others hope to work in the (3), and some plan to help people by working on an (4) team.
+During training, each (5) learns to support others and follow instructions carefully. Trainees must stay (6) of safety rules at all times. The work is not easy, and many describe it as a long (7). They must (8) stress, pain, and tiredness without giving up.
+In physical training, students learn to (9) their bodies and keep good (10). They also learn how to (11) difficult situations calmly instead of panicking.
+At the end of the program, the best trainees receive an (12) for their hard work. Leaders may even (13) those who show strong responsibility and teamwork. Many students learn their real (14) is in who they are, not in how they look. In the end, success is not about who you (15), but about what you can give."
+Answer Key:
+(1) "attend (v.)"
+(2) "army (n.)"
+(3) "air force (n.)"
+(4) "ambulance (n.)"
+(5) "assistant (n.)"
+(6) "aware (adj.)"
+(7) "battle (n.)"
+(8) "bear (v.)"
+(9) "balance (v.)"
+(10) "balance (n.)"
+(11) "battle (v.)"
+(12) "award (n.)"
+(13) "award (v.)"
+(14) "beauty (n.)"
+(15) "beat (v.)"
+
+SECTION 3
+Title: "📘 Reading 3 — A Student Council Meeting"
+Word Bank (14):
+"aim (v.)"
+"argument (n.)"
+"apology (n.)"
+"attention (n.)"
+"announce (v.)"
+"ambition (n.)"
+"allow (v.)"
+"aim (n.)"
+"apologise (v.)"
+"aloud (adv.)"
+"argue (v.)"
+"approve (v.)"
+"announcement (n.)"
+"avoid (v.)"
+Passage (14 blanks):
+"The student council met after school to discuss new ideas. The main (1) of the meeting was to improve school life for everyone. The president stood up to (2) the plans for the next month, and an official (3) was written on the board.
+All students were asked to pay close (4) and listen carefully. One member began to speak (5), explaining his personal (6) to become a leader in the future.
+During the discussion, two students started to (7) about the best way to organize events. The (8) became louder, and the teacher had to step in to calm everyone down.
+One student chose to (9) for speaking rudely, and later gave a short (10). To (11) more problems, the group agreed to vote calmly.
+In the end, the teacher decided to (12) the plan and (13) students to help organize the event. Everyone agreed that the clear (14) of the meeting helped them work better together."
+Answer Key:
+(1) "aim (n.)"
+(2) "announce (v.)"
+(3) "announcement (n.)"
+(4) "attention (n.)"
+(5) "aloud (adv.)"
+(6) "ambition (n.)"
+(7) "argue (v.)"
+(8) "argument (n.)"
+(9) "apologise (v.)"
+(10) "apology (n.)"
+(11) "avoid (v.)"
+(12) "approve (v.)"
+(13) "allow (v.)"
+(14) "aim (v.)"
+
+SECTION 4
+Title: "📘 Reading 4 — Applying to Join a New Club"
+Word Bank (13):
+"anywhere (adv.)"
+"apply (v.) – put on / use"
+"appearance (n.)"
+"anybody (pron.)"
+"application (n.)"
+"alone (adj./adv.)"
+"alike (adj./adv.)"
+"appear (v.)"
+"anyone (pron.)"
+"anymore (adv.)"
+"apply (v.) – request / form"
+"anything (pron.)"
+"anyway (adv.)"
+Passage (13 blanks):
+"At the start of the school year, students can (1) to join different clubs and programs. Each student must fill out an (2) online before the deadline.
+Before the interview, teachers remind students that their (3) and attitude are important. When students (4) confident, they often feel more relaxed.
+The club is open to (5) who is interested, and students do not need special skills or (6). Some students worry about joining (7), but they soon realize that many members are very (8).
+Meetings can take place (9) on campus, so members should always check the schedule. If students feel nervous (10), they are encouraged to try (11). They don’t need to (12) special skills on the first day (13)."
+Answer Key:
+(1) "apply (v.) – request / form"
+(2) "application (n.)"
+(3) "appearance (n.)"
+(4) "appear (v.)"
+(5) "anyone (pron.)"
+(6) "anything (pron.)"
+(7) "alone (adj./adv.)"
+(8) "alike (adj./adv.)"
+(9) "anywhere (adv.)"
+(10) "anymore (adv.)"
+(11) "anyway (adv.)"
+(12) "apply (v.) – put on / use"
+(13) "anybody (pron.)"
+
+SECTION 5
+Title: "📘 Reading 5 — Moving to a New Place"
+Word Bank (15):
+"amazed (adj.)"
+"area (n.)"
+"annoy (v.)"
+"around (prep./adv.)"
+"apartment building (n.)"
+"bank (n.)"
+"alive (adj.)"
+"apart from (prep. phr.)"
+"amazing (adj.)"
+"armchair (n.)"
+"awful (adj.)"
+"anxious (adj.)"
+"apartment (n.)"
+"apart (adv.)"
+"amaze (v.)"
+Passage (15 blanks):
+"When Leo moved into a new (1), he felt excited but also (2). The (3) was large and modern, and the (4) around it was busy and noisy.
+On his first day, he walked (5) the neighborhood to learn where things were. He found a small (6) on the corner and a park nearby. (7) from the noise, the place felt friendly.
+At first, the sounds from other homes began to (8) him, and one night the noise was truly (9). However, there were moments that continued to (10) him. The city lights at night were (11), and he often felt (12) when watching people walk by.
+Inside his apartment, Leo sat in his (13) and thought about his day. Even though he lived far (14) from his old home, he knew this experience would keep him feeling (15) for days."
+Answer Key:
+(1) "apartment (n.)"
+(2) "anxious (adj.)"
+(3) "apartment building (n.)"
+(4) "area (n.)"
+(5) "around (prep./adv.)"
+(6) "bank (n.)"
+(7) "apart from (prep. phr.)"
+(8) "annoy (v.)"
+(9) "awful (adj.)"
+(10) "amaze (v.)"
+(11) "amazing (adj.)"
+(12) "alive (adj.)"
+(13) "armchair (n.)"
+(14) "apart (adv.)"
+(15) "amazed (adj.)"
+
+SECTION 6
+Title: "📘 Reading 6 — How Families Plan and Experience Trips"
+Word Bank (16):
+"alarm (v.)"
+"ages (n.)"
+"airport (n.)"
+"airline (n.)"
+"baggage (n.)"
+"air conditioning / air conditioner (n.)"
+"anniversary (n.)"
+"ancient (adj.)"
+"arrive (v.)"
+"a.m. (adv.)"
+"alarm (n.)"
+"awake (adj.)"
+"asleep (adj.)"
+"age (n.)"
+"age (v.)"
+"aged (adj.)"
+Passage (16 blanks):
+"Many families plan trips differently depending on the (1) of everyone. A child and an (2) grandparent may not enjoy the same schedule.
+For many parents, it can feel like (3) have passed since the last family holiday. Some families travel to celebrate an (4) or to visit an (5) place.
+On travel days, an (6) often rings early, sometimes before 6:00 (7). Some people are already (8), while others are still (9). Parents may (10) quickly from the stress of traveling with young kids.
+At the (11), families check in with the (12) and carry their (13). Inside the building, the (14) helps everyone stay comfortable while they wait. When people finally (15) at the destination, the trip can sometimes (16) younger travelers—especially if everything feels new."
+Answer Key:
+(1) "age (n.)"
+(2) "aged (adj.)"
+(3) "ages (n.)"
+(4) "anniversary (n.)"
+(5) "ancient (adj.)"
+(6) "alarm (n.)"
+(7) "a.m. (adv.)"
+(8) "awake (adj.)"
+(9) "asleep (adj.)"
+(10) "age (v.)"
+(11) "airport (n.)"
+(12) "airline (n.)"
+(13) "baggage (n.)"
+(14) "air conditioning / air conditioner (n.)"
+(15) "arrive (v.)"
+(16) "alarm (v.)"
+
+SECTION 7
+Title: "📘 Reading 7 — How Buildings Are Designed and Planned"
+Word Bank (9):
+"architecture (n.)"
+"base (v.)"
+"approach (n.)"
+"architect (n.)"
+"arrange (v.)"
+"base (n.)"
+"artistic (adj.)"
+"arrangement (n.)"
+"approach (v.)"
+Passage (9 blanks):
+"An (1) is the person who plans and designs buildings. The study of building design is called (2), and it combines safety, function, and style.
+When starting a new project, designers first choose an (3). This plan helps them decide how to (4) the design on the needs of the people who will use the building. A strong (5) is important because it supports the entire structure.
+Next, rooms are planned carefully. Designers (6) spaces so that people can move easily, and the final (7) must be practical and comfortable. At the same time, many buildings include (8) details that make them attractive.
+Overall, it is important to (9) a design by balancing beauty and usefulness."
+Answer Key:
+(1) "architect (n.)"
+(2) "architecture (n.)"
+(3) "approach (n.)"
+(4) "base (v.)"
+(5) "base (n.)"
+(6) "arrange (v.)"
+(7) "arrangement (n.)"
+(8) "artistic (adj.)"
+(9) "approach (v.)"

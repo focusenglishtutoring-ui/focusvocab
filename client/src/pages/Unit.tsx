@@ -139,6 +139,34 @@ export default function Unit() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card 
+              className="group cursor-pointer border-2 border-primary/20 hover:border-primary transition-all duration-300 bg-primary/5 hover:shadow-lg"
+              onClick={() => setLocation(`/final-unit-test`)}
+            >
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-primary text-primary-foreground rounded-xl flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+                      <Trophy className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold">Final Unit Test</h3>
+                      <p className="text-muted-foreground">Comprehensive assessment across all 7 reading sections</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="text-right">
+                      <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-1">Status</p>
+                      <div className="text-lg font-bold text-primary">
+                        Available
+                      </div>
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-all" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>

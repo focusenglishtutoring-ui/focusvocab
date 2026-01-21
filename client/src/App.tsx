@@ -10,6 +10,7 @@ import Module from "@/pages/Module";
 import ModuleQuiz from "@/pages/ModuleQuiz";
 import MidUnitTest from "@/pages/MidUnitTest";
 import UnitTest2 from "@/pages/UnitTest2";
+import FinalUnitTest from "@/pages/FinalUnitTest";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/unit/:unitId/module/:moduleId/quiz" component={ModuleQuiz} />
       <Route path="/mid-unit-test-1" component={MidUnitTest} />
       <Route path="/unit-test-2" component={UnitTest2} />
+      <Route path="/final-unit-test" component={FinalUnitTest} />
       <Route component={NotFound} />
     </Switch>
   );
