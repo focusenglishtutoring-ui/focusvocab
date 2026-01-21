@@ -76,8 +76,8 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       "id": 9,
       "prompt": "Choose the sentence that sounds correct.",
       "choices": {
-        "A":"What age do students take this test?",
-        "B":"This class is for children aged 8 to 10.",
+        "A":"What aged do students take this test?",
+        "B":"This class is for children age 8 to 10.",
         "C":"People age differently under stress."
       },
       "correct": "C"
