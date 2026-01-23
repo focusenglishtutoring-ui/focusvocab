@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "functions": {
+    "dist/index.cjs": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/dist/index.cjs" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/dist/public/index.html" }
+  ]
+}
