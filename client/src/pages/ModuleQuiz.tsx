@@ -917,15 +917,23 @@ export default function ModuleQuiz() {
           </Button>
           
           {currentIndex === totalQuestions - 1 ? (
-            <Button 
-              size="lg" 
-              onClick={handleSubmit}
-              disabled={!isAllAnswered}
-              className="rounded-full px-10 h-14 text-lg shadow-lg"
-            >
-              Submit Quiz
-              <Check className="ml-2 w-5 h-5" />
-            </Button>
+            <div className="flex flex-col items-center gap-2">
+              <Button 
+                size="lg" 
+                onClick={handleSubmit}
+                disabled={!isAllAnswered}
+                className="rounded-full px-10 h-14 text-lg shadow-lg"
+                data-testid="button-submit-quiz"
+              >
+                Submit Quiz
+                <Check className="ml-2 w-5 h-5" />
+              </Button>
+              {!isAllAnswered && (
+                <p className="text-sm text-muted-foreground" data-testid="text-unanswered-note">
+                  Please answer all {totalQuestions - Object.keys(answers).length} remaining question{totalQuestions - Object.keys(answers).length !== 1 ? 's' : ''} to submit
+                </p>
+              )}
+            </div>
           ) : (
             <Button 
               size="lg" 
