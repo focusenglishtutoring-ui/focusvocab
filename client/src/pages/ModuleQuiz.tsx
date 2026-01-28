@@ -69,7 +69,7 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
     {
       "id": 8,
       "prompt": "Her skills ______ everyone.",
-      "choices": {"A":"amazed","B":"amaze","C":"amazing"},
+      "choices": {"A":"amazes","B":"amaze","C":"amazing"},
       "correct": "B"
     },
     {
@@ -78,7 +78,7 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
       "choices": {
         "A":"What aged do students take this test?",
         "B":"This class is for children age 8 to 10.",
-        "C":"People age differently under stress."
+        "C":"Our bodies age over time."
       },
       "correct": "C"
     },
@@ -110,7 +110,7 @@ const QUIZ_DATA_BY_MODULE: Record<string, QuizQuestion[]> = {
     },
     {
       "id": 4,
-      "prompt": "Choose the sentence that uses 'apply' correctly (meaning: put something on).",
+      "prompt": "Choose the sentence that uses 'apply' correctly (meaning: put something on something else).",
       "choices": {
         "A":"She applied for the course last week.",
         "B":"He applied the program yesterday.",

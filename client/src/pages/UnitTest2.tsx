@@ -20,12 +20,12 @@ const WORD_BANK = [
 ];
 
 const QUESTIONS = [
-  "1. The movie is __________ on a true story.",
+  "1. The movie director wants to __________ his next movie on a true story.",
   "2. Does __________ have a pen I can borrow?",
-  "3. I'm so hungry I could eat __________ on the menu.",
+  "3. Is there __________ you want to do today?",
   "4. It was raining, but we went for a walk __________.",
-  "5. I've looked __________, but I still can't find my keys.",
-  "6. The two countries continued to __________ for many years.",
+  "5. I can't find my keys __________!",
+  "6. The two countries continued to __________ each other for many years.",
   "7. __________ the rain, it was a very pleasant day.",
   "8. She lives in a small __________ on the third floor.",
   "9. That large __________ has twenty different flats.",
@@ -55,7 +55,7 @@ const QUESTIONS = [
   "33. She won an __________ for her excellent photography.",
   "34. The committee will __________ the prize to the best student.",
   "35. Are you __________ of the new rules for the exam?",
-  "36. The weather was __________—it rained every single day.",
+  "36. The weather was __________ last week. It rained every single day!",
   "37. He took a few steps __________ to get a better view.",
   "38. Please collect your __________ from the carousel.",
   "39. He lost his __________ and fell off the bicycle.",
@@ -66,9 +66,9 @@ const QUESTIONS = [
   "44. We only need some __________ tools to fix the chair.",
   "45. Many soldiers died in the famous __________ of Waterloo.",
   "46. The two houses are about 100 meters __________.",
-  "47. I ate a delicious salad with green __________ for lunch.",
+  "47. I let the dog try and eat one __________ as a snack.",
   "48. I can't __________ the heat in this room; let's open a window.",
-  "49. Our team managed to __________ the champions in the final.",
+  "49. Our team is going to __________ last year's champions in the final.",
   "50. We were all surprised by the natural __________ of the island."
 ];
 
